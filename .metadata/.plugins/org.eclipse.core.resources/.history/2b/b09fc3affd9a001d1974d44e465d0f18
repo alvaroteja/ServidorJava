@@ -1,0 +1,54 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+body {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+form{
+
+	text-align: center;
+
+}
+</style>
+</head>
+<body>
+	<form action="formularioServlet" method="post">
+		<label>Nombre:</label> <input type="text" name="nombre"> <br />
+		<label>clave:</label> <input type="password" name="calve"> <br />
+		<label>genero:</label><label>Masculino:</label> <input type="radio"
+			name="genero" value="masculino"> <label>Femenino:</label> <input
+			type="radio" name="genero" value="femenino"> <br /> <label>Fecha
+			de nacimiento (YYYY-MM-DD):</label> <input type="date" name="FechaNacimiento">
+		<br /> <label>Selector simple:</label> <select name="selectorSimple">
+			<option value="value1">Value 1</option>
+			<option value="value2">Value 2</option>
+			<option value="value3">Value 3</option>
+		</select> <br /> <label>Pais:</label><br /> <select name="pais" id="pais"
+			multiple>
+			<option value="Portugal">Portugal</option>
+			<option value="Espana">España</option>
+			<option value="Francia">Francia</option>
+			<option value="Italia">Italia</option>
+		</select> <br /> <label>Acepto:</label> <input type="checkbox" name="acepto">
+		<br /> <label>Comentario:</label>
+		<textarea name="comentario">texto de ejemplo</textarea>
+		<input type="hidden" name="custId" value="aa"> <input
+			type="hidden" name="custId" value="aaaa"> <br /> <label>colores:</label>
+		<br /> <label>amarillo:</label> <input type="checkbox" name="colores"
+			value="amarillo"> <label>rojo:</label> <input type="checkbox"
+			name="colores" value="rojo"> <label>verde:</label> <input
+			type="checkbox" name="colores" value="verde"> <label>azul:</label>
+		<input type="checkbox" name="colores" value="azul"> <br /> <input
+			type="submit">
+	</form>
+</body>
+</html>

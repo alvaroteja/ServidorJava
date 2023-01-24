@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<!-- enctype="multipart/form-data" -->
+	<form action="FormularioServlet2" method="post" enctype="multipart/form-data">
+		<label>Nombre:</label> <input type="text" name="nombre"> <br />
+		<label>Clave:</label> <input type="password" name="calve"> <br />
+		<label>Genero:</label> <label>Masculino:</label> <input type="radio"
+			name="genero" value="masculino"> <label>Femenino:</label> <input
+			type="radio" name="genero" value="femenino"> <br /> <label>Fecha
+			de nacimiento (YYYY-MM-DD):</label> <input type="date" name="fechaNacimiento">
+		<br /> <label>Selector simple:</label> <select name="selectorSimple">
+			<option value="value1">Value 1</option>
+			<option value="value2">Value 2</option>
+			<option value="value3">Value 3</option>
+		</select> <br /> <label>Pais:</label><br /> <select name="pais" id="pais"
+			multiple>
+			<option value="Portugal">Portugal</option>
+			<option value="Espana">España</option>
+			<option value="Francia">Francia</option>
+			<option value="Italia">Italia</option>
+		</select> <br /> <label>Acepto:</label> <input type="checkbox" name="acepto">
+		<br /> <label>Comentario:</label>
+		<textarea name="comentario">texto de ejemplo</textarea>
+		<input type="hidden" name="custId" value="aa"> <input
+			type="hidden" name="custId" value="aaaa"> <br /> <label>colores:</label>
+		<br /> <label>amarillo:</label> <input type="checkbox" name="colores"
+			value="amarillo"> <br /> <label>rojo:</label> <input
+			type="checkbox" name="colores" value="rojo"> <br /> <label>verde:</label>
+		<input type="checkbox" name="colores" value="verde"> <br /> <label>azul:</label>
+		<input type="checkbox" name="colores" value="azul"> <br /> 
+		<label>Subir archivo:</label><input type="file" name="archivo">
+		<br />
+		<input type="submit">
+		
+	</form>
+</body>
+</html>

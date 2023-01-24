@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="5.0">
+  <servlet>
+    <description></description>
+    <display-name>DetectaUsuario</display-name>
+    <servlet-name>DetectaUsuario</servlet-name>
+    <servlet-class>DetectaUsuario</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DetectaUsuario</servlet-name>
+    <url-pattern>/DetectaUsuario</url-pattern>
+  </servlet-mapping>
+  <display-name>09_RegistraUsuarioAnonimo</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>Ejemplo</display-name>
+    <servlet-name>Ejemplo</servlet-name>
+    <servlet-class>Ejemplo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Ejemplo</servlet-name>
+    <url-pattern>/Ejemplo</url-pattern>
+  </servlet-mapping>
+</web-app>

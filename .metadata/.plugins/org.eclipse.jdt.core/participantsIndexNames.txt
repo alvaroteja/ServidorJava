@@ -1,0 +1,13 @@
+INDEX VERSION 1.131
+C:\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2807554684.index
+\09_RegistraUsuarioAnonimo\src\main\java
+C:\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4172203959.index
+\06_Practica8-3ConJSP\src\main\java
+C:\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1492161170.index
+\10-Redireccion\src\main\java
+C:\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\732466760.index
+\11-EchoParametrosConArchivoJSP\src\main\java
+C:\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\988778855.index
+\12-EchoParametrosConArchivosJSP\src\main\java
+C:\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2437412458.index
+\contadorVisitas\src\main\java

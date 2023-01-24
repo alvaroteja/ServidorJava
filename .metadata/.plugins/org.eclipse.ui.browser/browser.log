@@ -1,0 +1,54 @@
+
+ene 10, 2023 09:37:43.941 NEW SESSION
+ene 10, 2023 09:37:43.941 [1844:4084:0110/093743.940:ERROR:device_event_log_impl.cc(215)] [09:37:43.939] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+ene 10, 2023 09:38:41.803 [1844:6660:0110/093841.802:ERROR:util.cc(133)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+ene 10, 2023 10:23:09.278 [1844:4084:0110/102309.278:ERROR:interface_endpoint_client.cc(694)] Message 1 rejected by interface blink.mojom.WidgetHost
+
+ene 11, 2023 12:40:43.89 NEW SESSION
+ene 11, 2023 12:40:43.90 [11160:11604:0111/124043.078:ERROR:device_event_log_impl.cc(215)] [12:40:43.078] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+ene 11, 2023 12:41:40.822 [11160:10484:0111/124140.821:ERROR:util.cc(133)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+ene 11, 2023 12:49:29.462 [6436:13220:0111/124929.462:ERROR:device_event_log_impl.cc(215)] [12:49:29.462] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+ene 11, 2023 12:50:27.366 [6436:1916:0111/125027.365:ERROR:util.cc(133)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+ene 11, 2023 13:12:34.286 [6436:13220:0111/131234.286:ERROR:interface_endpoint_client.cc(694)] Message 1 rejected by interface blink.mojom.WidgetHost
+
+ene 12, 2023 12:33:10.786 NEW SESSION
+ene 12, 2023 12:33:10.786 [10736:13944:0112/123310.785:ERROR:device_event_log_impl.cc(215)] [12:33:10.786] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+ene 12, 2023 12:34:08.656 [10736:15240:0112/123408.655:ERROR:util.cc(133)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+ene 12, 2023 13:01:35.236 [10736:9696:0112/130135.236:ERROR:cert_verify_proc_builtin.cc(670)] CertVerifyProcBuiltin for blackboxapp.co failed:
+ene 12, 2023 13:01:35.237 ----- Certificate i=1 (CN=194.224.78.91) -----
+ene 12, 2023 13:01:35.238 ERROR: No matching issuer found
+ene 12, 2023 13:01:35.239 
+ene 12, 2023 13:01:35.240 
+ene 12, 2023 13:57:16.91 [10736:13944:0112/135716.091:ERROR:interface_endpoint_client.cc(694)] Message 1 rejected by interface blink.mojom.WidgetHost
+
+ene 13, 2023 10:28:13.663 NEW SESSION
+ene 13, 2023 10:28:13.663 [11016:14608:0113/102813.662:ERROR:device_event_log_impl.cc(215)] [10:28:13.662] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+ene 13, 2023 10:29:11.567 [11016:7628:0113/102911.566:ERROR:util.cc(134)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+ene 13, 2023 11:09:43.869 [11016:14608:0113/110943.868:ERROR:interface_endpoint_client.cc(695)] Message 0 rejected by interface blink.mojom.WidgetHost
+ene 13, 2023 11:39:51.675 [11016:14608:0113/113951.675:ERROR:device_event_log_impl.cc(215)] [11:39:51.675] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: No se ha encontrado el elemento. (0x490)
+ene 13, 2023 12:24:49.540 [11016:14608:0113/122449.539:ERROR:interface_endpoint_client.cc(695)] Message 1 rejected by interface blink.mojom.WidgetHost
+ene 13, 2023 12:24:49.540 [11016:14608:0113/122449.539:ERROR:interface_endpoint_client.cc(695)] Message 1 rejected by interface blink.mojom.WidgetHost
+ene 13, 2023 13:04:05.888 [11016:14608:0113/130405.887:ERROR:interface_endpoint_client.cc(695)] Message 1 rejected by interface blink.mojom.WidgetHost
+
+ene 20, 2023 10:32:42.164 NEW SESSION
+ene 20, 2023 10:32:42.164 [7460:4332:0120/103242.163:ERROR:device_event_log_impl.cc(215)] [10:32:42.163] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+ene 20, 2023 10:32:47.981 [7460:4332:0120/103247.980:ERROR:interface_endpoint_client.cc(695)] Message 1 rejected by interface blink.mojom.WidgetHost
+ene 20, 2023 10:33:39.870 [7460:4200:0120/103339.870:ERROR:util.cc(134)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+ene 20, 2023 10:41:25.18 [7460:4200:0120/104125.018:ERROR:cert_verify_proc_builtin.cc(676)] CertVerifyProcBuiltin for ad.mrtnsvr.com failed:
+ene 20, 2023 10:41:25.18 ----- Certificate i=1 (CN=194.224.78.91) -----
+ene 20, 2023 10:41:25.19 ERROR: No matching issuer found
+ene 20, 2023 10:41:25.19 
+ene 20, 2023 10:41:25.19 
+ene 20, 2023 10:41:25.665 [7460:4200:0120/104125.664:ERROR:cert_verify_proc_builtin.cc(676)] CertVerifyProcBuiltin for bpi.rtactivate.com failed:
+ene 20, 2023 10:41:25.666 ----- Certificate i=1 (CN=194.224.78.91) -----
+ene 20, 2023 10:41:25.666 ERROR: No matching issuer found
+ene 20, 2023 10:41:25.667 
+ene 20, 2023 10:41:25.668 
+ene 20, 2023 11:04:39.893 [libprotobuf ERROR ..\..\third_party\protobuf\src\google\protobuf\message_lite.cc:133] Can't parse message of type "safe_browsing.ClientDownloadRequest" because it is missing required fields: (cannot determine missing fields for lite message)
+ene 20, 2023 11:38:18.903 [7460:6732:0120/113818.902:ERROR:connection_factory_impl.cc(472)] ConnectionHandler failed with net error: -2
+ene 20, 2023 11:38:20.290 [7460:6732:0120/113820.290:ERROR:connection_factory_impl.cc(472)] ConnectionHandler failed with net error: -2
+ene 20, 2023 11:39:32.132 [7460:6732:0120/113932.132:ERROR:connection_factory_impl.cc(427)] Failed to connect to MCS endpoint with error -105
+ene 20, 2023 11:39:32.156 [7460:6732:0120/113932.156:ERROR:connection_factory_impl.cc(427)] Failed to connect to MCS endpoint with error -105
+ene 20, 2023 11:39:33.642 [7460:6732:0120/113933.642:ERROR:connection_factory_impl.cc(427)] Failed to connect to MCS endpoint with error -105
+ene 20, 2023 11:39:36.178 [7460:4332:0120/113936.177:ERROR:device_event_log_impl.cc(215)] [11:39:36.177] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: No se ha encontrado el elemento. (0x490)
+ene 20, 2023 11:39:37.78 [7460:6732:0120/113937.078:ERROR:connection_factory_impl.cc(427)] Failed to connect to MCS endpoint with error -105

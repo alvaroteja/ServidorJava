@@ -1,0 +1,114 @@
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.Cookie;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.nio.charset.Charset;
+import java.util.Random;
+
+/**
+ * Servlet implementation class DetectaUsuario
+ */
+public class DetectaUsuario extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+	/**
+	 * @see HttpServlet#HttpServlet()
+	 */
+	public DetectaUsuario() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
+	 *      response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		// TODO Auto-generated method stub
+
+		response.setContentType("text/html;charset=UTF-8");
+		PrintWriter out = response.getWriter();
+
+		try {
+			out.println("<html>");
+			out.println("<head>");
+			out.println("<title>DetectaUsuario</title>");
+			out.println("</head>");
+			out.println("<body>");
+			out.println("<h1>Detecta Usuario</h1>");
+
+			int i;
+			if (request.getCookies() != null) {
+
+				Cookie[] arrayCookies = request.getCookies();
+				String contenidoCookie = "";
+				int longitud = arrayCookies.length;
+
+				boolean cookieEncontrada = false;
+
+				if (arrayCookies != null && longitud > 0) {
+					for (i = 0; i < longitud && !cookieEncontrada; i++) {
+						String nombreCookie = arrayCookies[i].getName();
+						if (nombreCookie.equals("uid")) {
+							cookieEncontrada = true;
+							contenidoCookie = arrayCookies[i].getValue();
+						}
+					}
+
+					if (cookieEncontrada) {
+						out.println("<h1>Hola usuario, tu Cookie es " + contenidoCookie + "</h1>");
+					} else {
+						out.print("<h1>El usuario no tiene la cookie uid.</h1>");
+						crearCookie("uid", response);
+						//Cookie unaCookie = new Cookie("uid", "ljkasdjklasdklj");
+						//response.addCookie(unaCookie);
+					}
+				} else {
+					out.print("<h1>No hay ninguna Cookie</h1>");
+					crearCookie("uid", response);
+					//Cookie unaCookie = new Cookie("uid", "ljkasdjklasdklj");
+					//response.addCookie(unaCookie);
+				}
+			} else {
+				out.print("<h1>No hay ninguna Cookie en el navegador</h1>");
+				crearCookie("uid", response);
+				//Cookie unaCookie = new Cookie("uid", "ljkasdjklasdklj");
+				//response.addCookie(unaCookie);
+			}
+
+			out.println("</body>");
+			out.println("</html>");
+		} catch (Exception e) {
+			out.println("Se produce una excepci�n <br />");
+			e.printStackTrace(out);
+		} finally {
+			out.close();
+		}
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
+	 *      response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		doGet(request, response);
+	}
+
+	protected void crearCookie(String nombreCookie, HttpServletResponse response) {
+		byte[] array = new byte[7];
+		new Random().nextBytes(array);
+		String stringRandom = new String(array, Charset.forName("UTF-8"));
+
+		Cookie unaCookie = new Cookie(nombreCookie, stringRandom);
+		response.addCookie(unaCookie);
+	}
+
+}

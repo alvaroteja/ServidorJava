@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="RecepcionFormulario" method="post">
+		Nombre:<input type="text" name="nombre"> Constraseña:<input
+			type="password" name="pass"> <select name="idioma">
+			<option value="espanol">Español</option>
+			<option value="inglesb">Ingles</option>
+			<option value="frances">Frances</option>
+		</select> <input type="checkbox" name="loc" value="cantabria">cantabria
+		<input type="checkbox" name="loc" value="asturias">asturias <input
+			type="checkbox" name="loc" value="catalunia">catalunia <input
+			name="saludo" type="hidden" value="hola"> <input
+			type="submit" value="consulta">
+	</form>
+</body>
+</html>

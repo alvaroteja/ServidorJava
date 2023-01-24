@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1 align="center">Tienda Libros</h1>
+	<h3>Elige autor(s):</h3>
+	<form action="conectorABaseDeDatos" method="get">
+		<input type="checkbox" name="loc" value="madrid">madrid
+		<input type="checkbox" name="loc" value="galicia">galicia
+		<input type="checkbox" name="loc"	value="cantabria">cantabria
+		<input type="checkbox" name="loc" value="asturias">asturias
+		<input type="checkbox" name="loc" value="catalunia">catalunia
+			<input name="saludo" type="hidden" value="hola">
+			<input type="submit" value="consulta">
+	</form>
+	<hr>
+	<table border="1" cellpadding="5">
+		<tr>
+			<th>Autor</th>
+			<th>Titulo</th>
+			<th>Precio</th>
+			<th>Cantidad</th>
+		</tr>
+		<tr>
+			<td>autor</td>
+			<td>titulo</td>
+			<td>precio</td>
+			<td>cantidad</td>
+		</tr>
+	</table>
+</body>
+</html>

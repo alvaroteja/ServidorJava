@@ -1,0 +1,27 @@
+127.0.0.1 - - [24/Jan/2023:10:44:08 +0100] "GET / HTTP/1.1" 404 687
+0:0:0:0:0:0:0:1 - - [24/Jan/2023:10:44:10 +0100] "GET /05-EchoParametrosConArchivo/formulario.jsp HTTP/1.1" 200 2216
+0:0:0:0:0:0:0:1 - - [24/Jan/2023:10:44:10 +0100] "GET /favicon.ico HTTP/1.1" 404 698
+0:0:0:0:0:0:0:1 - - [24/Jan/2023:10:44:12 +0100] "POST /05-EchoParametrosConArchivo/FormularioServlet HTTP/1.1" 200 723
+0:0:0:0:0:0:0:1 - - [24/Jan/2023:10:44:46 +0100] "POST /05-EchoParametrosConArchivo/FormularioServlet HTTP/1.1" 200 706
+127.0.0.1 - - [24/Jan/2023:10:47:27 +0100] "GET / HTTP/1.1" 404 687
+0:0:0:0:0:0:0:1 - - [24/Jan/2023:10:47:27 +0100] "GET /05-EchoParametrosConArchivo/FormularioServlet HTTP/1.1" 200 2220
+127.0.0.1 - - [24/Jan/2023:10:50:48 +0100] "GET / HTTP/1.1" 404 687
+0:0:0:0:0:0:0:1 - - [24/Jan/2023:10:50:49 +0100] "GET /05-EchoParametrosConArchivo/FormularioServlet HTTP/1.1" 200 39
+0:0:0:0:0:0:0:1 - - [24/Jan/2023:10:52:40 +0100] "GET /05-EchoParametrosConArchivo/ HTTP/1.1" 200 2216
+0:0:0:0:0:0:0:1 - - [24/Jan/2023:10:52:52 +0100] "GET /05-EchoParametrosConArchivo/FormularioServlet HTTP/1.1" 200 39
+127.0.0.1 - - [24/Jan/2023:10:55:04 +0100] "GET / HTTP/1.1" 404 687
+0:0:0:0:0:0:0:1 - - [24/Jan/2023:10:55:04 +0100] "GET /05-EchoParametrosConArchivo/ HTTP/1.1" 200 2216
+0:0:0:0:0:0:0:1 - - [24/Jan/2023:10:55:45 +0100] "GET /11-EchoParametrosConArchivosJSP/ HTTP/1.1" 404 723
+127.0.0.1 - - [24/Jan/2023:11:00:05 +0100] "GET / HTTP/1.1" 404 687
+0:0:0:0:0:0:0:1 - - [24/Jan/2023:11:00:07 +0100] "GET /12-EchoParametrosConArchivosJSP/ HTTP/1.1" 200 2216
+0:0:0:0:0:0:0:1 - - [24/Jan/2023:11:00:43 +0100] "GET /12-EchoParametrosConArchivosJSP/ HTTP/1.1" 200 2220
+0:0:0:0:0:0:0:1 - - [24/Jan/2023:11:00:52 +0100] "GET /12-EchoParametrosConArchivosJSP/ HTTP/1.1" 200 2220
+0:0:0:0:0:0:0:1 - - [24/Jan/2023:11:03:15 +0100] "GET /12-EchoParametrosConArchivosJSP/ HTTP/1.1" 200 2220
+0:0:0:0:0:0:0:1 - - [24/Jan/2023:11:03:17 +0100] "POST /12-EchoParametrosConArchivosJSP/FormularioServlet HTTP/1.1" 200 723
+192.168.60.40 - - [24/Jan/2023:11:40:24 +0100] "GET / HTTP/1.1" 404 687
+192.168.60.40 - - [24/Jan/2023:11:40:30 +0100] "GET /HNAP1/ HTTP/1.1" 404 697
+192.168.60.40 - - [24/Jan/2023:11:40:50 +0100] "-" 400 1898
+192.168.60.40 - - [24/Jan/2023:11:40:50 +0100] "GET /requested.html HTTP/1.1" 404 701
+127.0.0.1 - - [24/Jan/2023:11:58:44 +0100] "GET / HTTP/1.1" 404 687
+0:0:0:0:0:0:0:1 - - [24/Jan/2023:11:58:45 +0100] "GET /12-EchoParametrosConArchivosJSP/ HTTP/1.1" 200 2270
+0:0:0:0:0:0:0:1 - - [24/Jan/2023:11:58:50 +0100] "POST /12-EchoParametrosConArchivosJSP/FormularioServlet HTTP/1.1" 200 2268
