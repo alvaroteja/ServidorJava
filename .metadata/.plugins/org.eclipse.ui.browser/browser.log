@@ -52,3 +52,8 @@ ene 20, 2023 11:39:32.156 [7460:6732:0120/113932.156:ERROR:connection_factory_im
 ene 20, 2023 11:39:33.642 [7460:6732:0120/113933.642:ERROR:connection_factory_impl.cc(427)] Failed to connect to MCS endpoint with error -105
 ene 20, 2023 11:39:36.178 [7460:4332:0120/113936.177:ERROR:device_event_log_impl.cc(215)] [11:39:36.177] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: No se ha encontrado el elemento. (0x490)
 ene 20, 2023 11:39:37.78 [7460:6732:0120/113937.078:ERROR:connection_factory_impl.cc(427)] Failed to connect to MCS endpoint with error -105
+
+ene 25, 2023 12:44:16.918 NEW SESSION
+ene 25, 2023 12:44:16.918 [8900:7104:0125/124416.917:ERROR:device_event_log_impl.cc(215)] [12:44:16.917] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+ene 25, 2023 12:45:14.636 [8900:11812:0125/124514.635:ERROR:util.cc(134)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+ene 25, 2023 12:54:06.255 [8900:7104:0125/125406.255:ERROR:interface_endpoint_client.cc(695)] Message 1 rejected by interface blink.mojom.WidgetHost

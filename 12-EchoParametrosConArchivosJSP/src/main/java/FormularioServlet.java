@@ -9,12 +9,17 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.time.LocalDate;
 import java.time.Period;
+import java.util.Iterator;
+import java.util.LinkedHashMap;
+import java.util.Map;
 
 /**
  * Servlet implementation class FormularioServlet
  */
 public class FormularioServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
+	
+	public LinkedHashMap<String,String> arrayValoresYEtiquetas = new LinkedHashMap<String,String>(); 
 
 	/**
 	 * @see HttpServlet#HttpServlet()
@@ -40,6 +45,11 @@ public class FormularioServlet extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		
+		arrayValoresYEtiquetas.put("ES", "Espana");
+		arrayValoresYEtiquetas.put("FR", "Francia");
+		arrayValoresYEtiquetas.put("IT", "Italia");
+		
 		PrintWriter out = response.getWriter();
 		out.println("<h1>hola</h1>");
 		try {
@@ -117,7 +127,7 @@ public class FormularioServlet extends HttpServlet {
 			} else {
 				FechaNacimientoValidacion = "Fecha no introducida.";
 			}
-			request.setAttribute("FechaNacimiento", FechaNacimientoValidacion);
+			request.setAttribute("FechaNacimiento", FechaNacimiento);
 			request.setAttribute("FechaNacimientoValidacion", FechaNacimientoValidacion);
 
 			// Validacion selectorSimple
@@ -227,6 +237,23 @@ public class FormularioServlet extends HttpServlet {
 		} else {
 			return 0;
 		}
+	}
+	
+	public static String generaSelectSimple(String nombreControl, Map<String,String> arrayValoresYEtiquetas, String valorSeleccionado) {
+		String salida = "";
+	    salida += "<select name=\"" + nombreControl + "\">" + "\n";
+		Iterator<String> iteradorConjuntoClaves = arrayValoresYEtiquetas.keySet().iterator();
+		while (iteradorConjuntoClaves.hasNext()) {
+			String clave = iteradorConjuntoClaves.next();
+			String valor = arrayValoresYEtiquetas.get(clave);
+			if (valorSeleccionado.equals(clave)) {
+				salida += "  <option value=\"" + clave + "\" selected=\"selected\">" + valor + "</option>" + "\n";  
+			  } else {
+				salida += "  <option value=\"" + clave + "\">" + valor + "</option>" + "\n";
+			  }
+		  }
+		  salida += "</select>" + "\n";	
+		  return salida;	
 	}
 
 }

@@ -1,6 +1,8 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" import="paqueteClases.Scriptlets ,paqueteClases.Datos"%>
 
 <%
+
+
 // Variables recuperadas
 String nombre = (String) request.getAttribute("nombre");
 nombre = nombre != null ? nombre : "";
@@ -91,13 +93,15 @@ label {
 		<label>Femenino:</label>
 		<input type="radio" name="genero" value="femenino" <%=generoFemenino%>/> <br />
 		<label>Fecha de nacimiento (YYYY-MM-DD):</label>
-		<input type="date" name="FechaNacimiento" /> <br />
+		<input type="date" name="FechaNacimiento" value="<%=FechaNacimiento%>"> <br />
 		<label>Selector simple:</label>
-		<select name="selectorSimple">
-			<option value="value1">Value 1</option>
-			<option value="value2">Value 2</option>
-			<option value="value3">Value 3</option>
-		</select> <br />
+		<!-- <select name="selectorSimple" >
+			<option value="Espana" >Espana</option>
+			<option value="Francia" >Francia</option>
+			<option value="Italia" >Italia</option>
+		</select> --> 
+		<%= Scriptlets.generaSelectSimple("selectorSimple", Datos.arrayValoresYEtiquetas, selectorSimple) %>
+		<br />
 		<label>Pa�s:</label>
 		<br /> <select name="pais" id="pais" multiple>
 			<option value="Portugal">Portugal</option>
