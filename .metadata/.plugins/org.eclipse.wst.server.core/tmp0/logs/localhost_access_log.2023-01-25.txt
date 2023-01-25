@@ -21,3 +21,13 @@
 0:0:0:0:0:0:0:1 - - [25/Jan/2023:13:30:05 +0100] "GET /12-EchoParametrosConArchivosJSP/ HTTP/1.1" 500 3105
 127.0.0.1 - - [25/Jan/2023:13:42:35 +0100] "GET / HTTP/1.1" 404 687
 0:0:0:0:0:0:0:1 - - [25/Jan/2023:13:42:37 +0100] "GET /12-EchoParametrosConArchivosJSP/formulario.jsp HTTP/1.1" 500 3084
+127.0.0.1 - - [25/Jan/2023:13:48:57 +0100] "GET / HTTP/1.1" 404 687
+0:0:0:0:0:0:0:1 - - [25/Jan/2023:13:48:58 +0100] "GET /12-EchoParametrosConArchivosJSP/formulario.jsp HTTP/1.1" 200 2472
+0:0:0:0:0:0:0:1 - - [25/Jan/2023:13:51:02 +0100] "GET /12-EchoParametrosConArchivosJSP/formulario.jsp HTTP/1.1" 200 2472
+0:0:0:0:0:0:0:1 - - [25/Jan/2023:13:51:44 +0100] "GET /12-EchoParametrosConArchivosJSP/formulario.jsp HTTP/1.1" 200 2472
+0:0:0:0:0:0:0:1 - - [25/Jan/2023:13:51:51 +0100] "POST /12-EchoParametrosConArchivosJSP/FormularioServlet HTTP/1.1" 200 2492
+0:0:0:0:0:0:0:1 - - [25/Jan/2023:13:51:57 +0100] "POST /12-EchoParametrosConArchivosJSP/FormularioServlet HTTP/1.1" 200 2492
+0:0:0:0:0:0:0:1 - - [25/Jan/2023:13:52:01 +0100] "GET /12-EchoParametrosConArchivosJSP/formulario.jsp HTTP/1.1" 200 2472
+0:0:0:0:0:0:0:1 - - [25/Jan/2023:13:52:04 +0100] "POST /12-EchoParametrosConArchivosJSP/FormularioServlet HTTP/1.1" 200 2492
+0:0:0:0:0:0:0:1 - - [25/Jan/2023:13:52:31 +0100] "GET /12-EchoParametrosConArchivosJSP/formulario.jsp HTTP/1.1" 200 2472
+0:0:0:0:0:0:0:1 - - [25/Jan/2023:13:52:35 +0100] "POST /12-EchoParametrosConArchivosJSP/FormularioServlet HTTP/1.1" 200 2492

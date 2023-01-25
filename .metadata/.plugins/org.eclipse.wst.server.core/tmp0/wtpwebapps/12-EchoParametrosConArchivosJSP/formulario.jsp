@@ -21,7 +21,9 @@ FechaNacimiento = FechaNacimiento != null ? FechaNacimiento : "";
 String selectorSimple = (String) request.getAttribute("selectorSimple");
 selectorSimple = selectorSimple != null ? selectorSimple : "";
 
-//String[] pais = (String []) request.getAttribute("pais");
+String[] pais = (String []) request.getAttribute("pais");
+//SEGUIR AQUI!!!!
+
 
 String acepto = (String) request.getAttribute("acepto");
 acepto = acepto != null && acepto.equals("on") ? "checked" : "";
@@ -100,15 +102,17 @@ label {
 			<option value="Francia" >Francia</option>
 			<option value="Italia" >Italia</option>
 		</select> --> 
-		<%= Scriptlets.generaSelectSimple("selectorSimple", Datos.arrayValoresYEtiquetas, selectorSimple) %>
+		<%= Scriptlets.generaSelectSimple("selectorSimple", Datos.arrayValoresYEtiquetasSimple, selectorSimple) %>
 		<br />
 		<label>Pa�s:</label>
-		<br /> <select name="pais" id="pais" multiple>
+		<br /><!--  <select name="pais" id="pais" multiple>
 			<option value="Portugal">Portugal</option>
 			<option value="Espana">Espa�a</option>
 			<option value="Francia">Francia</option>
 			<option value="Italia">Italia</option>
-		</select> <br />
+		</select> -->
+		<%= Scriptlets.generaSelectSimple("pais", Datos.arrayValoresYEtiquetasMultiple, selectorSimple) %>
+		 <br />
 		<label>Acepto:</label>
 		<input type="checkbox" name="acepto" <%=acepto%> /> <br />
 		<label>Comentario:</label>
