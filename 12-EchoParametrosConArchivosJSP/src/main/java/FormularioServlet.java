@@ -1,7 +1,7 @@
 
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
-import jakarta.servlet.annotation.WebServlet;
+//import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -145,7 +145,8 @@ public class FormularioServlet extends HttpServlet {
 			} else {
 				paisValidacion = "No se ha seleccionado ningun pais.";
 			}
-			//request.setAttribute("pais", paisValidacion);
+			request.setAttribute("pais", pais);
+			request.setAttribute("paisValidacion", paisValidacion);
 
 			// Validacion acepto
 			if (acepto != null && acepto.length() > 0 && acepto.equals("on")) {
@@ -184,36 +185,37 @@ public class FormularioServlet extends HttpServlet {
 			} else {
 				coloresValidacion = "No se ha seleccionado ningun color.";
 			}
-			//request.setAttribute("colores", coloresValidacion);
+			request.setAttribute("colores", colores);
+			request.setAttribute("coloresValidacion", coloresValidacion);
 
-			out.println("nombnre = " + nombre + "</br>");
-			out.println("clave = " + clave + "</br>");
-			out.println("genero = " + genero + "</br>");
-			out.println("FechaNacimiento = " + FechaNacimiento + "</br>");
-			out.println("selectorSimple = " + selectorSimple + "</br>");
-			if (pais != null && pais.length > 0) {
-				for (int i = 0; i < pais.length; i++) {
-					out.println("pais = " + pais[i] + "</br>");
-				}
-			}
-			out.println("acepto = " + acepto + "</br>");
-			out.println("comentario = " + comentario + "</br>");
-			out.println("oculto = " + oculto + "</br>");
-			if (colores != null && colores.length > 0) {
-				for (int i = 0; i < colores.length; i++) {
-					out.println("color = " + pais[i] + "</br>");
-				}
-			}
-			out.println("</br>nombreValidacion = " + nombreValidacion + "</br>");
-			out.println("claveValidacion = " + claveValidacion + "</br>");
-			out.println("generoValidacion = " + generoValidacion + "</br>");
-			out.println("FechaNacimientoValidacion = " + FechaNacimientoValidacion + "</br>");
-			out.println("selectorSimpleValidacion = " + selectorSimpleValidacion + "</br>");
-			out.println("paisValidacion = " + paisValidacion + "</br>");
-			out.println("aceptoValidacion = " + aceptoValidacion + "</br>");
-			out.println("comentarioValidacion = " + comentarioValidacion + "</br>");
-			out.println("ocultoValidacion = " + ocultoValidacion + "</br>");
-			out.println("coloresValidacion = " + coloresValidacion + "</br>");
+//			out.println("nombnre = " + nombre + "</br>");
+//			out.println("clave = " + clave + "</br>");
+//			out.println("genero = " + genero + "</br>");
+//			out.println("FechaNacimiento = " + FechaNacimiento + "</br>");
+//			out.println("selectorSimple = " + selectorSimple + "</br>");
+//			if (pais != null && pais.length > 0) {
+//				for (int i = 0; i < pais.length; i++) {
+//					out.println("pais = " + pais[i] + "</br>");
+//				}
+//			}
+//			out.println("acepto = " + acepto + "</br>");
+//			out.println("comentario = " + comentario + "</br>");
+//			out.println("oculto = " + oculto + "</br>");
+//			if (colores != null && colores.length > 0) {
+//				for (int i = 0; i < colores.length; i++) {
+//					out.println("color = " + pais[i] + "</br>");
+//				}
+//			}
+//			out.println("</br>nombreValidacion = " + nombreValidacion + "</br>");
+//			out.println("claveValidacion = " + claveValidacion + "</br>");
+//			out.println("generoValidacion = " + generoValidacion + "</br>");
+//			out.println("FechaNacimientoValidacion = " + FechaNacimientoValidacion + "</br>");
+//			out.println("selectorSimpleValidacion = " + selectorSimpleValidacion + "</br>");
+//			out.println("paisValidacion = " + paisValidacion + "</br>");
+//			out.println("aceptoValidacion = " + aceptoValidacion + "</br>");
+//			out.println("comentarioValidacion = " + comentarioValidacion + "</br>");
+//			out.println("ocultoValidacion = " + ocultoValidacion + "</br>");
+//			out.println("coloresValidacion = " + coloresValidacion + "</br>");
 			
 			RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/formulario.jsp");
 			dispatcher.forward(request, response);

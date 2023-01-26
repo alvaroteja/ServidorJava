@@ -1,21 +1,11 @@
 package paqueteClases;
 //package paqueteClases;
 
-import java.io.IOException;
-import java.io.PrintWriter;
 import java.util.Iterator;
-import java.util.LinkedHashMap;
 import java.util.Map;
 
-import jakarta.servlet.ServletException;
-import jakarta.servlet.annotation.WebServlet;
-import jakarta.servlet.http.HttpServlet;
-import jakarta.servlet.http.HttpServletRequest;
-import jakarta.servlet.http.HttpServletResponse;
 
 public class Scriptlets {
-	private static final long serialVersionUID = 1L;
-
 	/*
 	 * nombreControl: valor del atributo name de los radios arrayValoresYEtiquetas:
 	 * array asociativo de pares (valor, etiqueta) para el atributo value de cada
