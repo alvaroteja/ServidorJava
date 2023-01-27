@@ -7,10 +7,6 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.sql.Statement;
 import java.time.LocalDate;
 import java.time.Period;
 import java.util.Iterator;
@@ -22,8 +18,8 @@ import java.util.Map;
  */
 public class FormularioServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-
-	public LinkedHashMap<String, String> arrayValoresYEtiquetas = new LinkedHashMap<String, String>();
+	
+	public LinkedHashMap<String,String> arrayValoresYEtiquetas = new LinkedHashMap<String,String>(); 
 
 	/**
 	 * @see HttpServlet#HttpServlet()
@@ -49,11 +45,11 @@ public class FormularioServlet extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-
+		
 		arrayValoresYEtiquetas.put("ES", "Espana");
 		arrayValoresYEtiquetas.put("FR", "Francia");
 		arrayValoresYEtiquetas.put("IT", "Italia");
-
+		
 		PrintWriter out = response.getWriter();
 		out.println("<h1>hola</h1>");
 		try {
@@ -220,49 +216,9 @@ public class FormularioServlet extends HttpServlet {
 //			out.println("comentarioValidacion = " + comentarioValidacion + "</br>");
 //			out.println("ocultoValidacion = " + ocultoValidacion + "</br>");
 //			out.println("coloresValidacion = " + coloresValidacion + "</br>");
-
-			// Guardado en la base de datos
-			String paisConcatenado = concatenarValores(pais);
-			String coloresConcatenado = concatenarValores(colores);
-
-			// Paso 1: Cargar el driver JDBC.
-			Class.forName("com.mysql.jdbc.Driver").newInstance();
-
-			// Paso 2: Conectarse a la Base de Datos utilizando la clase Connection
-			String userName = "root";
-			String password = "";
-			String url = "jdbc:mysql://localhost/datosformulario";
-
-			Connection conn = DriverManager.getConnection(url, userName, password);
-			// Paso 3: Crear sentencias SQL, utilizando objetos de tipo Statement
-			Statement stmt = conn.createStatement();
-			String sqlStr = "INSERT INTO `usuarios` (`id`, `nombre`, `contrasena`, `genero`, `fechaNacimiento`, `selectoSimple`, `pais`, `acepto`, `comentario`, `color`) VALUES (NULL, '"
-					+ nombre + "', '" + clave + "', '" + genero + "', '" + FechaNacimiento + "', '" + selectorSimple
-					+ "', '" + paisConcatenado + "', '" + acepto + "', '" + comentario + "', '" + coloresConcatenado
-					+ "');";
-			// para depuraci´on
-			System.out.println("La consulta sql es " + sqlStr);
 			
-			// Paso 4: Ejecutar las sentencias SQL a trav´es de los objetos Statement
-			stmt.executeUpdate(sqlStr);
-			
-
-			////////////////////////////////////
-
 			RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/formulario.jsp");
 			dispatcher.forward(request, response);
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (InstantiationException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (IllegalAccessException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (ClassNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
 		} finally {
 
 		}
@@ -284,34 +240,22 @@ public class FormularioServlet extends HttpServlet {
 			return 0;
 		}
 	}
-
-	public static String generaSelectSimple(String nombreControl, Map<String, String> arrayValoresYEtiquetas,
-			String valorSeleccionado) {
+	
+	public static String generaSelectSimple(String nombreControl, Map<String,String> arrayValoresYEtiquetas, String valorSeleccionado) {
 		String salida = "";
-		salida += "<select name=\"" + nombreControl + "\">" + "\n";
+	    salida += "<select name=\"" + nombreControl + "\">" + "\n";
 		Iterator<String> iteradorConjuntoClaves = arrayValoresYEtiquetas.keySet().iterator();
 		while (iteradorConjuntoClaves.hasNext()) {
 			String clave = iteradorConjuntoClaves.next();
 			String valor = arrayValoresYEtiquetas.get(clave);
 			if (valorSeleccionado.equals(clave)) {
-				salida += "  <option value=\"" + clave + "\" selected=\"selected\">" + valor + "</option>" + "\n";
-			} else {
+				salida += "  <option value=\"" + clave + "\" selected=\"selected\">" + valor + "</option>" + "\n";  
+			  } else {
 				salida += "  <option value=\"" + clave + "\">" + valor + "</option>" + "\n";
-			}
-		}
-		salida += "</select>" + "\n";
-		return salida;
+			  }
+		  }
+		  salida += "</select>" + "\n";	
+		  return salida;	
 	}
 
-	public static String concatenarValores(String[] valores) {
-		String valoresConcatenados = "";
-		for (int i = 0; i < valores.length; i++) {
-			if (i == 0) {
-				valoresConcatenados += valores[i];
-			} else {
-				valoresConcatenados += "&" + valores[i];
-			}
-		}
-		return valoresConcatenados;
-	}
 }

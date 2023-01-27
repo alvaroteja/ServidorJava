@@ -1,0 +1,8 @@
+127.0.0.1 - - [27/Jan/2023:10:29:00 +0100] "GET / HTTP/1.1" 404 687
+0:0:0:0:0:0:0:1 - - [27/Jan/2023:10:29:00 +0100] "GET /12-EchoParametrosConArchivosJSP/formulario.jsp HTTP/1.1" 200 3009
+0:0:0:0:0:0:0:1 - - [27/Jan/2023:10:29:00 +0100] "GET /favicon.ico HTTP/1.1" 404 698
+0:0:0:0:0:0:0:1 - - [27/Jan/2023:10:29:06 +0100] "POST /12-EchoParametrosConArchivosJSP/FormularioServlet HTTP/1.1" 200 3065
+0:0:0:0:0:0:0:1 - - [27/Jan/2023:10:33:45 +0100] "GET /12-EchoParametrosConArchivosJSP/formulario.jsp HTTP/1.1" 200 3009
+127.0.0.1 - - [27/Jan/2023:11:10:40 +0100] "GET / HTTP/1.1" 404 687
+0:0:0:0:0:0:0:1 - - [27/Jan/2023:11:10:41 +0100] "GET /12-EchoParametrosConArchivosJSP/formulario.jsp HTTP/1.1" 200 3009
+0:0:0:0:0:0:0:1 - - [27/Jan/2023:11:10:56 +0100] "POST /12-EchoParametrosConArchivosJSP/FormularioServlet HTTP/1.1" 200 15
