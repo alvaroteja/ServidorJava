@@ -9,6 +9,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.time.LocalDate;
@@ -153,11 +154,16 @@ public class FormularioServlet extends HttpServlet {
 			request.setAttribute("paisValidacion", paisValidacion);
 
 			// Validacion acepto
+			int aceptoInt;
 			if (acepto != null && acepto.length() > 0 && acepto.equals("on")) {
 				aceptoValidacion = "ok";
+				aceptoInt = 1;
+
 			} else {
 				aceptoValidacion = "No se ha seleccionado la casilla 'Acepto'.";
+				aceptoInt = 0;
 			}
+			// boolean aceptoBoolean = Boolean.parseBoolean(acepto);
 			request.setAttribute("acepto", acepto);
 			request.setAttribute("aceptoValidacion", aceptoValidacion);
 
@@ -225,42 +231,23 @@ public class FormularioServlet extends HttpServlet {
 			String paisConcatenado = concatenarValores(pais);
 			String coloresConcatenado = concatenarValores(colores);
 
-			// Paso 1: Cargar el driver JDBC.
-			Class.forName("com.mysql.jdbc.Driver").newInstance();
+			Class.forName("com.mysql.cj.jdbc.Driver");
 
-			// Paso 2: Conectarse a la Base de Datos utilizando la clase Connection
-			String userName = "root";
-			String password = "";
-			String url = "jdbc:mysql://localhost/datosformulario";
-
-			Connection conn = DriverManager.getConnection(url, userName, password);
-			// Paso 3: Crear sentencias SQL, utilizando objetos de tipo Statement
+			Connection conn = DriverManager.getConnection("jdbc:mysql://localhost/datosformulario", "root", "");
 			Statement stmt = conn.createStatement();
-			String sqlStr = "INSERT INTO `usuarios` (`id`, `nombre`, `contrasena`, `genero`, `fechaNacimiento`, `selectoSimple`, `pais`, `acepto`, `comentario`, `color`) VALUES (NULL, '"
-					+ nombre + "', '" + clave + "', '" + genero + "', '" + FechaNacimiento + "', '" + selectorSimple
-					+ "', '" + paisConcatenado + "', '" + acepto + "', '" + comentario + "', '" + coloresConcatenado
-					+ "');";
-			// para depuraci´on
-			System.out.println("La consulta sql es " + sqlStr);
-			
-			// Paso 4: Ejecutar las sentencias SQL a trav´es de los objetos Statement
-			stmt.executeUpdate(sqlStr);
-			
-
+			String sqlStr = "INSERT INTO `usuarios` VALUES (NULL, '" + nombre + "', '" + clave + "', '" + genero
+					+ "', '" + FechaNacimiento + "', '" + selectorSimple + "', '" + paisConcatenado + "', '" + aceptoInt
+					+ "', '" + comentario + "', '" + coloresConcatenado + "');";
+			int filas = stmt.executeUpdate(sqlStr);
 			////////////////////////////////////
 
 			RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/formulario.jsp");
 			dispatcher.forward(request, response);
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (InstantiationException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (IllegalAccessException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+
 		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} finally {
