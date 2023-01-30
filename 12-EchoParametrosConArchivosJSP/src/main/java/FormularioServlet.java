@@ -199,79 +199,41 @@ public class FormularioServlet extends HttpServlet {
 			request.setAttribute("colores", colores);
 			request.setAttribute("coloresValidacion", coloresValidacion);
 
-//			out.println("nombnre = " + nombre + "</br>");
-//			out.println("clave = " + clave + "</br>");
-//			out.println("genero = " + genero + "</br>");
-//			out.println("FechaNacimiento = " + FechaNacimiento + "</br>");
-//			out.println("selectorSimple = " + selectorSimple + "</br>");
-//			if (pais != null && pais.length > 0) {
-//				for (int i = 0; i < pais.length; i++) {
-//					out.println("pais = " + pais[i] + "</br>");
-//				}
-//			}
-//			out.println("acepto = " + acepto + "</br>");
-//			out.println("comentario = " + comentario + "</br>");
-//			out.println("oculto = " + oculto + "</br>");
-//			if (colores != null && colores.length > 0) {
-//				for (int i = 0; i < colores.length; i++) {
-//					out.println("color = " + pais[i] + "</br>");
-//				}
-//			}
-//			out.println("</br>nombreValidacion = " + nombreValidacion + "</br>");
-//			out.println("claveValidacion = " + claveValidacion + "</br>");
-//			out.println("generoValidacion = " + generoValidacion + "</br>");
-//			out.println("FechaNacimientoValidacion = " + FechaNacimientoValidacion + "</br>");
-//			out.println("selectorSimpleValidacion = " + selectorSimpleValidacion + "</br>");
-//			out.println("paisValidacion = " + paisValidacion + "</br>");
-//			out.println("aceptoValidacion = " + aceptoValidacion + "</br>");
-//			out.println("comentarioValidacion = " + comentarioValidacion + "</br>");
-//			out.println("ocultoValidacion = " + ocultoValidacion + "</br>");
-//			out.println("coloresValidacion = " + coloresValidacion + "</br>");
-
 			// Guardado en la base de datos
 			String paisConcatenado = concatenarValores(pais);
 			String coloresConcatenado = concatenarValores(colores);
 
 			Class.forName("com.mysql.cj.jdbc.Driver");
-
 			Connection conn = DriverManager.getConnection("jdbc:mysql://localhost/datosformulario", "root", "");
+
+			// Sentencia no preparada
+			//Statement stmt = conn.createStatement();
+			//String sqlStr = "INSERT INTO `usuarios` VALUES (NULL, '" + nombre + "', '" + clave + "', '" + genero
+			//+ "', '" + FechaNacimiento + "', '" + selectorSimple + "', '" + paisConcatenado + "', '" + aceptoInt
+			//+ "', '" + comentario + "', '" + coloresConcatenado + "');";
 			
-//			Statement stmt = conn.createStatement();
-//			String sqlStr = "INSERT INTO `usuarios` VALUES (NULL, '" + nombre + "', '" + clave + "', '" + genero
-//					+ "', '" + FechaNacimiento + "', '" + selectorSimple + "', '" + paisConcatenado + "', '" + aceptoInt
-//					+ "', '" + comentario + "', '" + coloresConcatenado + "');";
-			
-			String sqlStr = "INSERT INTO usuarios VALUES (null, ?, ?, ?, ?, ?, ?, ?, ?, ?);";
-			
+			String sqlStr = "INSERT INTO usuarios values (null, ?, ?, ?, ?, ?, ?, ?, ?, ?);";
 			PreparedStatement stmt = conn.prepareStatement(sqlStr);
 
+			stmt.setString(1, nombre);
+			stmt.setString(2, clave);
+			stmt.setString(3, genero);
+			stmt.setString(4, FechaNacimiento);
+			stmt.setString(5, selectorSimple);
+			stmt.setString(6, paisConcatenado);
+			stmt.setInt(7, aceptoInt);
+			stmt.setString(8, comentario);
+			stmt.setString(9, coloresConcatenado);
+
+			//pasarle sqlStr si no es preparada
+			int filas = stmt.executeUpdate();
+
+			out.println("<h1>" + filas + "</h1>");
 			
-//			stmt.setString(1, nombre);
-//			stmt.setString(2, clave);
-//			stmt.setString(3, genero);
-//			stmt.setString(4, FechaNacimiento);
-//			stmt.setString(5, selectorSimple);
-//			stmt.setString(6, paisConcatenado);
-//			stmt.setBoolean(7, true);
-//			stmt.setString(8, comentario);
-//			stmt.setString(9, coloresConcatenado);
-			
-			stmt.setString(1, "Han");
-			stmt.setString(2, "asdqweasd");
-			stmt.setString(3, "trans");
-			stmt.setString(4, "2023-01-18");
-			stmt.setString(5, "espanita");
-			stmt.setString(6, "espanita-Chinita");
-			stmt.setInt(7, 1);
-			stmt.setString(8, "akjasldkjasldkj askdjalkdjals dlaksjd");
-			stmt.setString(9, "azul");
-			
-			int filas = stmt.executeUpdate(sqlStr);
-			out.println("<h1>"+filas+"</h1>");
 			////////////////////////////////////
 
-			RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/formulario.jsp");
-			dispatcher.forward(request, response);
+			//RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/formulario.jsp");
+			//dispatcher.forward(request, response);
 
 		} catch (ClassNotFoundException e) {
 			// TODO Auto-generated catch block
