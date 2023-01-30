@@ -9,6 +9,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -234,11 +235,39 @@ public class FormularioServlet extends HttpServlet {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 
 			Connection conn = DriverManager.getConnection("jdbc:mysql://localhost/datosformulario", "root", "");
-			Statement stmt = conn.createStatement();
-			String sqlStr = "INSERT INTO `usuarios` VALUES (NULL, '" + nombre + "', '" + clave + "', '" + genero
-					+ "', '" + FechaNacimiento + "', '" + selectorSimple + "', '" + paisConcatenado + "', '" + aceptoInt
-					+ "', '" + comentario + "', '" + coloresConcatenado + "');";
+			
+//			Statement stmt = conn.createStatement();
+//			String sqlStr = "INSERT INTO `usuarios` VALUES (NULL, '" + nombre + "', '" + clave + "', '" + genero
+//					+ "', '" + FechaNacimiento + "', '" + selectorSimple + "', '" + paisConcatenado + "', '" + aceptoInt
+//					+ "', '" + comentario + "', '" + coloresConcatenado + "');";
+			
+			String sqlStr = "INSERT INTO usuarios VALUES (null, ?, ?, ?, ?, ?, ?, ?, ?, ?);";
+			
+			PreparedStatement stmt = conn.prepareStatement(sqlStr);
+
+			
+//			stmt.setString(1, nombre);
+//			stmt.setString(2, clave);
+//			stmt.setString(3, genero);
+//			stmt.setString(4, FechaNacimiento);
+//			stmt.setString(5, selectorSimple);
+//			stmt.setString(6, paisConcatenado);
+//			stmt.setBoolean(7, true);
+//			stmt.setString(8, comentario);
+//			stmt.setString(9, coloresConcatenado);
+			
+			stmt.setString(1, "Han");
+			stmt.setString(2, "asdqweasd");
+			stmt.setString(3, "trans");
+			stmt.setString(4, "2023-01-18");
+			stmt.setString(5, "espanita");
+			stmt.setString(6, "espanita-Chinita");
+			stmt.setInt(7, 1);
+			stmt.setString(8, "akjasldkjasldkj askdjalkdjals dlaksjd");
+			stmt.setString(9, "azul");
+			
 			int filas = stmt.executeUpdate(sqlStr);
+			out.println("<h1>"+filas+"</h1>");
 			////////////////////////////////////
 
 			RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/formulario.jsp");
@@ -291,6 +320,8 @@ public class FormularioServlet extends HttpServlet {
 	}
 
 	public static String concatenarValores(String[] valores) {
+		valores = valores != null ? valores : new String[0];
+
 		String valoresConcatenados = "";
 		for (int i = 0; i < valores.length; i++) {
 			if (i == 0) {
