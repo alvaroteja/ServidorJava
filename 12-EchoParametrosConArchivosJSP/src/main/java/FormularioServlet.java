@@ -232,8 +232,8 @@ public class FormularioServlet extends HttpServlet {
 			
 			////////////////////////////////////
 
-			//RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/formulario.jsp");
-			//dispatcher.forward(request, response);
+			RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/formulario.jsp");
+			dispatcher.forward(request, response);
 
 		} catch (ClassNotFoundException e) {
 			// TODO Auto-generated catch block
