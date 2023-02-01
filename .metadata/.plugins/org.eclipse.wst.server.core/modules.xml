@@ -13,4 +13,5 @@
   <module moduleId="org.eclipse.jst.jee.server:06_Practica8-3ConJSP" serverId="Tomcat v10.1 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:08_CreaYRecuperaCookie" serverId="Tomcat v10.1 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:09_RegistraUsuarioAnonimo" serverId="Tomcat v10.1 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:14-GuardaObjetosEnSesion" serverId="Tomcat v10.1 Server at localhost"/>
 </modules>

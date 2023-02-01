@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"
-	import="java.util.ArrayList, Clases.Producto, java.io.PrintWriter"%>
+	import="java.util.ArrayList, Clases.Producto, java.io.PrintWriter" session="true"%>
 
 <!DOCTYPE html>
 <html>
@@ -12,16 +12,21 @@
 <body>
 	<%
 	HttpSession sesion = request.getSession();
-	ArrayList<Producto> listaProductos = (ArrayList) sesion.getAttribute("produ");
 	%>
 	<div class="carrito">
 		<p class="etiqueta">Carrito:</p>
 		<%
-		for (int i = 0; i < listaProductos.size(); i++) {
-			out.println("<div class='productoCarrito'><div class='columna'><p class='etiqueta'>Producto:</p><p class='producto'>"
-			+ listaProductos.get(i).getProducto() + "</p></div><div class='columna'><p class='etiqueta'> Precio:</p><p class='pvp'>"
-			+ listaProductos.get(i).getPvp() + "</p></div></div>");
-		}
+		if (sesion.getAttribute("produ") != null) {
+			ArrayList<Producto> listaProductos = (ArrayList) sesion.getAttribute("produ");
+			for (int i = 0; i < listaProductos.size(); i++) {
+				out.println(
+				"<div class='productoCarrito'><div class='columna'><p class='etiqueta'>Producto:</p><p class='producto'>"
+						+ listaProductos.get(i).getProducto()
+						+ "</p></div><div class='columna'><p class='etiqueta'> Precio:</p><p class='pvp'>"
+						+ listaProductos.get(i).getPvp() + "</p></div><div class='columna'><p class='etiqueta'> Cantidad:</p><p class='pvp'>"
+								+ listaProductos.get(i).getCantidad() + "</p></div></div>");
+			}
+		} 
 		%>
 	</div>
 	<div class="productos">

@@ -62,13 +62,28 @@ public class RecepcionFormulario extends HttpServlet {
 
 				// Inicio la sesion
 				HttpSession session = request.getSession();
+				if (session.getAttribute("produ") != null) {
+					ArrayList<Producto> listaProductos = (ArrayList) session.getAttribute("produ");
+					boolean productoEncontrado = false;
+					for (int i = 0; i < listaProductos.size(); i++) {
+						int id = listaProductos.get(i).getIdproducto();
+						if (id == idProducto) {
+							listaProductos.get(i).setCantidad(listaProductos.get(i).getCantidad() + 1);
+							productoEncontrado = true;
+						}
+					}
+					if (productoEncontrado == false) {
+						listaProductos.add(produ);
+					}
+					session.setAttribute("produ", listaProductos);
+				} else {
+					// Copio la lista de la seion y añado el nuevo objeto
+					ArrayList<Producto> listaProductos = (ArrayList<Producto>) session.getAttribute("produ");
+					listaProductos.add(produ);
 
-				// Copio la lista de la seion y añado el nuevo objeto
-				ArrayList<Producto> listaProductos = (ArrayList<Producto>) session.getAttribute("produ");
-				listaProductos.add(produ);
-
-				// Meto la nueva lista en la sesion, reemplazando la atigua
-				session.setAttribute("produ", listaProductos);
+					// Meto la nueva lista en la sesion, reemplazando la atigua
+					session.setAttribute("produ", listaProductos);
+				}
 
 			}
 			// Si no venimos desde el formulario
