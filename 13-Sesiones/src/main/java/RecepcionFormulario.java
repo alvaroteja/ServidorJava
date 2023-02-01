@@ -47,8 +47,45 @@ public class RecepcionFormulario extends HttpServlet {
 		out.println("<h1>Esto es recepcion</h1>");
 
 		try {
-			// Si vienen datos del formulario
-			if (request.getParameter("idProductoH") != null) {
+			if (request.getParameter("restarProducto") != null) {
+				HttpSession session = request.getSession(true);
+
+				ArrayList<Producto> listaProductos = (ArrayList) session.getAttribute("produ");
+
+				int idARestar = Integer.parseInt(request.getParameter("restarProducto"));
+
+				boolean productoEncontrado = false;
+				for (int i = 0; i < listaProductos.size() && !productoEncontrado; i++) {
+					int idProducto = listaProductos.get(i).getIdproducto();
+					if (idARestar == idProducto) {
+						System.out.print("producto encontrado");
+						int cantidadActual = listaProductos.get(i).getCantidad();
+
+						if (cantidadActual > 1) {
+							listaProductos.get(i).setCantidad(cantidadActual - 1);
+						} else {
+							listaProductos.remove(i);
+						}
+						productoEncontrado = true;
+					}
+				}
+			} else if (request.getParameter("eliminarProducto") != null) {
+				HttpSession session = request.getSession(true);
+
+				ArrayList<Producto> listaProductos = (ArrayList) session.getAttribute("produ");
+
+				int idARestar = Integer.parseInt(request.getParameter("eliminarProducto"));
+
+				boolean productoEncontrado = false;
+				for (int i = 0; i < listaProductos.size() && !productoEncontrado; i++) {
+					int idProducto = listaProductos.get(i).getIdproducto();
+					if (idARestar == idProducto) {
+						listaProductos.remove(i);
+						productoEncontrado = true;
+					}
+				}
+			} else if (request.getParameter("idProductoH") != null) {
+				System.out.print("Se ha detectado in id " + request.getParameter("idProductoH"));
 				// Capturo los datos enviados por el formulario
 				int idProducto = Integer.parseInt(request.getParameter("idProductoH"));
 				int stockActual = Integer.parseInt(request.getParameter("stockActualH"));
@@ -61,7 +98,8 @@ public class RecepcionFormulario extends HttpServlet {
 				Producto produ = new Producto(idProducto, stockActual, stockMinimo, producto, descripcion, pvp);
 
 				// Inicio la sesion
-				HttpSession session = request.getSession();
+				HttpSession session = request.getSession(true);
+
 				if (session.getAttribute("produ") != null) {
 					ArrayList<Producto> listaProductos = (ArrayList) session.getAttribute("produ");
 					boolean productoEncontrado = false;
@@ -78,7 +116,7 @@ public class RecepcionFormulario extends HttpServlet {
 					session.setAttribute("produ", listaProductos);
 				} else {
 					// Copio la lista de la seion y añado el nuevo objeto
-					ArrayList<Producto> listaProductos = (ArrayList<Producto>) session.getAttribute("produ");
+					ArrayList<Producto> listaProductos = new ArrayList<Producto>();
 					listaProductos.add(produ);
 
 					// Meto la nueva lista en la sesion, reemplazando la atigua
@@ -96,6 +134,18 @@ public class RecepcionFormulario extends HttpServlet {
 
 		} catch (Error e) {
 		} finally {
+			HttpSession session = request.getSession(false);
+			if (session.getAttribute("produ") != null) {
+				float precioTotal = 0;
+				ArrayList<Producto> listaProductos = (ArrayList) session.getAttribute("produ");
+
+				for (int i = 0; i < listaProductos.size(); i++) {
+					float pvp = listaProductos.get(i).getPvp();
+					int cantidad = listaProductos.get(i).getCantidad();
+					precioTotal += (pvp * cantidad);
+				}
+				session.setAttribute("precioTotal", precioTotal);
+			}
 			// Redirecciono al jsp
 			RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/productos.jsp");
 			dispatcher.forward(request, response);
