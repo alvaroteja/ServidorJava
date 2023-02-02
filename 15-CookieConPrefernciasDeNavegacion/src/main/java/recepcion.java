@@ -68,14 +68,9 @@ public class recepcion extends HttpServlet {
 		// **************************************
 
 		if (nombreHaSidoEnviado && contrasenaHaSidoEnviada) {
-			// camturamos los parametros
+			// capturamos los parametros
 			String nombre = request.getParameter("nombre");
 			String contrasena = request.getParameter("contrasena");
-
-			// testing
-			out.print("<h1>Esto es recepcion</h1>");
-			out.print("<h1>nombre: " + nombre + "</h1>");
-			out.print("<h1>contrasena: " + contrasena + "</h1>");
 
 			// Se valida el usuario y la contraseña
 
@@ -96,19 +91,46 @@ public class recepcion extends HttpServlet {
 
 			// Dependiendo de si nombre y contraseña estan bien o no
 			if (usuarioValido && contrasenaValida) {
-				// mandar a crear cookie
-				Cookie[] arrayCookies = request.;
-				if (arrayCookies == null || arrayCookies.length == 0) {
+
+				// Buscando la cookie con el nombre de usuario
+				Cookie[] cookies = request.getCookies();
+				Cookie ck = null;
+
+				if (cookies != null) {
+					for (Cookie cookie : cookies) {
+						if (cookie.getName().equals(nombre)) {
+							ck = cookie;
+							break;
+						}
+					}
+				}
+				// si no existe la cookie con el nombre de usuario vamos a bienvenido
+				if (ck == null) {
+					request.setAttribute("nombreUsuario", nombre);
 					RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/bienvenido.jsp");
 					dispatcher.forward(request, response);
-//					RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/bienvenido");
-//					dispatcher.forward(request, response);
-				} else {
-					out.print("<h1>cagaste</h1>");
-					
-					out.print(arrayCookies[0].getName());
 				}
-
+				// si existe la cookie con el nombre de usuario la manejamos
+				else {
+					// Sacando los valores de la cookie
+					String contenidoCk[] = ck.getValue().split("&");
+					int contador = Integer.parseInt(contenidoCk[0]);
+					String checkBox = contenidoCk[1];
+					String nombreUsuario = ck.getName();
+					
+					// incremento contador
+					contador++;
+					
+					// preparo la nueva cookie que va a sustituir la anterior
+					Cookie cknueva = new Cookie(nombreUsuario, contador + "&" + checkBox);
+					response.addCookie(cknueva);
+					
+					// vamos a binvenido.jsp
+					request.setAttribute("contador", contador);
+					request.setAttribute("nombreUsuario", nombre);
+					RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/bienvenido.jsp");
+					dispatcher.forward(request, response);
+				}
 			} else {
 				RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/index.jsp");
 
@@ -119,8 +141,6 @@ public class recepcion extends HttpServlet {
 
 				dispatcher.forward(request, response);
 			}
-			out.print("<h1>usuarioValido: " + usuarioValido + "</h1>");
-			out.print("<h1>contraseñaValida: " + contrasenaValida + "</h1>");
 		} else {
 			// Mandar para atras a decir que campo falta
 			RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/index.jsp");

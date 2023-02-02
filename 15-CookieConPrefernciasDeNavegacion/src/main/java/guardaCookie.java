@@ -1,4 +1,5 @@
 
+import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.Cookie;
@@ -28,17 +29,7 @@ public class guardaCookie extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		PrintWriter out = response.getWriter();
-		out.print("<h1>Esto es guardaCookies</h1>");
-		try {
-			Cookie[] arrayCookies = request.getCookies();
-			if (arrayCookies == null) {
-				out.print("<h1>No hay cookies</h1>");
-			}else {
-				out.print("<h1>Hay cookies</h1>");
-			}
-		} finally {
-		}
+
 	}
 
 	/**
@@ -47,8 +38,24 @@ public class guardaCookie extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		doGet(request, response);
+		PrintWriter out = response.getWriter();
+		try {
+
+			String contenido[] = request.getParameter("nombreUsuarioYContador").split("&");
+
+			String nombreUsuario = contenido[0];
+			int contador = Integer.parseInt(contenido[1]);
+
+			String checkBox = request.getParameter("idiomas");
+
+			
+			Cookie ck =new Cookie(nombreUsuario,contador+"&"+checkBox);  
+			response.addCookie(ck);
+			
+			RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/index.jsp");
+			dispatcher.forward(request, response);
+		} finally {
+		}
 	}
 
 }
