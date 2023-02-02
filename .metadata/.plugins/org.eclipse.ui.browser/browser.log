@@ -61,3 +61,13 @@ ene 25, 2023 12:54:06.255 [8900:7104:0125/125406.255:ERROR:interface_endpoint_cl
 feb 01, 2023 09:26:06.705 NEW SESSION
 feb 01, 2023 09:26:06.705 [9268:4120:0201/092606.704:ERROR:device_event_log_impl.cc(215)] [09:26:06.704] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
 feb 01, 2023 09:27:04.475 [9268:5064:0201/092704.475:ERROR:util.cc(134)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+
+feb 02, 2023 09:27:19.221 NEW SESSION
+feb 02, 2023 09:27:19.221 [13300:8640:0202/092719.220:ERROR:device_event_log_impl.cc(215)] [09:27:19.220] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+feb 02, 2023 09:28:16.903 [13300:6100:0202/092816.903:ERROR:util.cc(134)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+feb 02, 2023 11:37:20.303 [13300:11112:0202/113720.303:ERROR:connection_factory_impl.cc(472)] ConnectionHandler failed with net error: -2
+feb 02, 2023 11:37:21.695 [13300:11112:0202/113721.694:ERROR:connection_factory_impl.cc(472)] ConnectionHandler failed with net error: -2
+feb 02, 2023 11:41:01.189 [13300:11112:0202/114101.189:ERROR:connection_factory_impl.cc(427)] Failed to connect to MCS endpoint with error -106
+feb 02, 2023 11:41:02.715 [13300:11112:0202/114102.714:ERROR:connection_factory_impl.cc(427)] Failed to connect to MCS endpoint with error -105
+feb 02, 2023 11:41:05.149 [13300:8640:0202/114105.149:ERROR:device_event_log_impl.cc(215)] [11:41:05.150] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: No se ha encontrado el elemento. (0x490)
+feb 02, 2023 11:41:06.75 [13300:11112:0202/114106.074:ERROR:connection_factory_impl.cc(427)] Failed to connect to MCS endpoint with error -105
