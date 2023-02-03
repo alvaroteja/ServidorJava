@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="sesion"/>
+		<item key="selection" value=""/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="cooki"/>
+			<item value="ookie"/>
+			<item value="oockie"/>
+			<item value="coockie"/>
+			<item value="contrasenaEnviada"/>
+			<item value="nombreEnviado"/>
+			<item value="colum"/>
+			<item value="writ"/>
 			<item value="sesion"/>
 			<item value="idProductoH"/>
 			<item value="session"/>
@@ -15,18 +23,15 @@
 			<item value="columna"/>
 			<item value="aceptoInt"/>
 			<item value="out.println"/>
-			<item value="&lt;select name=&quot;pais&quot; id=&quot;pais&quot; multiple&gt;"/>
-			<item value="sc"/>
-			<item value="enctype=&quot;multipart/form-data&quot;"/>
-			<item value="} finally {"/>
-			<item value="LocalDate fecha = LocalDate.parse(request.getParameter(&quot;FechaNacimiento&quot;));"/>
 		</list>
 		<list key="replacehistory">
+			<item value="contrasenaHaSidoEnviada"/>
+			<item value="nombreHaSidoEnviado"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="501"/>
-		<item key="DIALOG_Y_ORIGIN" value="353"/>
+		<item key="DIALOG_X_ORIGIN" value="1026"/>
+		<item key="DIALOG_Y_ORIGIN" value="240"/>
 		<item key="DIALOG_WIDTH" value="322"/>
 		<item key="DIALOG_HEIGHT" value="391"/>
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>

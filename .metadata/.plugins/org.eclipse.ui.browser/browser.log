@@ -71,3 +71,7 @@ feb 02, 2023 11:41:01.189 [13300:11112:0202/114101.189:ERROR:connection_factory_
 feb 02, 2023 11:41:02.715 [13300:11112:0202/114102.714:ERROR:connection_factory_impl.cc(427)] Failed to connect to MCS endpoint with error -105
 feb 02, 2023 11:41:05.149 [13300:8640:0202/114105.149:ERROR:device_event_log_impl.cc(215)] [11:41:05.150] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: No se ha encontrado el elemento. (0x490)
 feb 02, 2023 11:41:06.75 [13300:11112:0202/114106.074:ERROR:connection_factory_impl.cc(427)] Failed to connect to MCS endpoint with error -105
+
+feb 03, 2023 10:34:16.126 NEW SESSION
+feb 03, 2023 10:34:16.126 [11148:6816:0203/103416.125:ERROR:device_event_log_impl.cc(215)] [10:34:16.124] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+feb 03, 2023 10:35:13.940 [11148:2288:0203/103513.939:ERROR:util.cc(134)] Can't create base directory: C:\Program Files\Google\GoogleUpdater

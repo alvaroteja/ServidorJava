@@ -6,6 +6,8 @@ import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
+
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.HashMap;
@@ -106,6 +108,12 @@ public class recepcion extends HttpServlet {
 				}
 				// si no existe la cookie con el nombre de usuario vamos a bienvenido
 				if (ck == null) {
+					//creo la sesion
+					HttpSession session = request.getSession(true);
+					session.setAttribute("nombreUsuario", nombre);
+					session.setAttribute("contador", "1");
+					session.setAttribute("checkBox", "espanol");
+					
 					request.setAttribute("nombreUsuario", nombre);
 					RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/bienvenido.jsp");
 					dispatcher.forward(request, response);
@@ -124,6 +132,12 @@ public class recepcion extends HttpServlet {
 					// preparo la nueva cookie que va a sustituir la anterior
 					Cookie cknueva = new Cookie(nombreUsuario, contador + "&" + checkBox);
 					response.addCookie(cknueva);
+					
+					//creo la sesion
+					HttpSession session = request.getSession(true);
+					session.setAttribute("nombreUsuario", nombre);
+					session.setAttribute("contador", contador);
+					session.setAttribute("checkBox", checkBox);
 					
 					// vamos a binvenido.jsp
 					request.setAttribute("contador", contador);
