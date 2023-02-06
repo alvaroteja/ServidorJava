@@ -1,55 +1,42 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" session="true"%>
 <%
 //Validaciones campos  vacios formulario
 String mensajeErrorNombreNoEnviado = "";
 String mensajeErrorContrasenaNoEnviada = "";
 
-boolean nombreHaSidoEnviado;
-boolean contrasenaHaSidoEnviada;
+boolean nombreHaSidoEnviado = false;
+boolean contrasenaHaSidoEnviada = false;
 
 String nombre;
 String contrasena;
 
 if (request.getAttribute("nombreHaSidoEnviado") != null && !((boolean) request.getAttribute("nombreHaSidoEnviado"))) {
-	nombreHaSidoEnviado = false;
 	mensajeErrorNombreNoEnviado = "El campo nombre está vacío.";
 } else if (request.getAttribute("nombreHaSidoEnviado") != null
 		&& ((boolean) request.getAttribute("nombreHaSidoEnviado"))) {
 	nombreHaSidoEnviado = true;
-} else {
-	nombreHaSidoEnviado = false;
 }
 
 if (request.getAttribute("contrasenaHaSidoEnviada") != null
 		&& !((boolean) request.getAttribute("contrasenaHaSidoEnviada"))) {
-	contrasenaHaSidoEnviada = false;
 	mensajeErrorContrasenaNoEnviada = "El campo contraseña está vacío.";
 } else if (request.getAttribute("contrasenaHaSidoEnviada") != null
 		&& ((boolean) request.getAttribute("contrasenaHaSidoEnviada"))) {
 	contrasenaHaSidoEnviada = true;
-} else {
-	contrasenaHaSidoEnviada = false;
 }
 
 //Validacion campos erroneos formularios
-boolean usuarioValido;
-boolean contrasenaValida;
+boolean usuarioValido = false;
+boolean contrasenaValida = false;
 if (request.getAttribute("usuarioValido") != null && !((boolean) request.getAttribute("usuarioValido"))) {
-	usuarioValido = false;
 	mensajeErrorNombreNoEnviado = "El nombre no es correcto.";
 } else if (request.getAttribute("usuarioValido") != null && ((boolean) request.getAttribute("usuarioValido"))) {
 	usuarioValido = true;
-} else {
-	usuarioValido = false;
 }
-
 if (request.getAttribute("contrasenaValida") != null && !((boolean) request.getAttribute("contrasenaValida"))) {
-	contrasenaValida = false;
 	mensajeErrorContrasenaNoEnviada = "La contraseña no es correcta.";
 } else if (request.getAttribute("contrasenaValida") != null && ((boolean) request.getAttribute("contrasenaValida"))) {
 	contrasenaValida = true;
-} else {
-	contrasenaValida = false;
 }
 %>
 <!DOCTYPE html>

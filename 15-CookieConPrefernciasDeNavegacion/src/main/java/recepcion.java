@@ -55,17 +55,14 @@ public class recepcion extends HttpServlet {
 		Iterator<String> it = usuariosPass.keySet().iterator();
 
 		// validaciones de los parametros
-		boolean nombreHaSidoEnviado;
-		boolean contrasenaHaSidoEnviada;
+		boolean nombreHaSidoEnviado=false;
+		boolean contrasenaHaSidoEnviada=false;
+		
 		if (request.getParameter("nombre") != null && request.getParameter("nombre").length() > 0) {
 			nombreHaSidoEnviado = true;
-		} else {
-			nombreHaSidoEnviado = false;
 		}
 		if (request.getParameter("contrasena") != null && request.getParameter("contrasena").length() > 0) {
 			contrasenaHaSidoEnviada = true;
-		} else {
-			contrasenaHaSidoEnviada = false;
 		}
 		// **************************************
 
@@ -77,13 +74,12 @@ public class recepcion extends HttpServlet {
 			// Se valida el usuario y la contraseña
 
 			boolean usuarioEncontrado = false;
-			boolean usuarioValido = false;
 			boolean contrasenaValida = false;
+			
 			while (it.hasNext() && !usuarioEncontrado) {
 				String nombreH = it.next();
 				if (nombre.equals(nombreH)) {
-					usuarioEncontrado = true;
-					usuarioValido = true;
+					usuarioEncontrado=true;
 					String contrasenaH = usuariosPass.get(nombreH);
 					if (contrasena.equals(contrasenaH)) {
 						contrasenaValida = true;
@@ -92,7 +88,7 @@ public class recepcion extends HttpServlet {
 			}
 
 			// Dependiendo de si nombre y contraseña estan bien o no
-			if (usuarioValido && contrasenaValida) {
+			if (usuarioEncontrado && contrasenaValida) {
 
 				// Buscando la cookie con el nombre de usuario
 				Cookie[] cookies = request.getCookies();
@@ -111,7 +107,7 @@ public class recepcion extends HttpServlet {
 					//creo la sesion
 					HttpSession session = request.getSession(true);
 					session.setAttribute("nombreUsuario", nombre);
-					session.setAttribute("contador", "1");
+					session.setAttribute("contador", 1);
 					session.setAttribute("checkBox", "espanol");
 					
 					request.setAttribute("nombreUsuario", nombre);
@@ -146,9 +142,10 @@ public class recepcion extends HttpServlet {
 					dispatcher.forward(request, response);
 				}
 			} else {
+				//Mandar al login a decir que campo está mal
 				RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/index.jsp");
 
-				request.setAttribute("usuarioValido", usuarioValido);
+				request.setAttribute("usuarioValido", usuarioEncontrado);
 				request.setAttribute("nombre", request.getParameter("nombre"));
 				request.setAttribute("contrasenaValida", contrasenaValida);
 				request.setAttribute("contrasena", request.getParameter("contrasena"));
@@ -156,7 +153,7 @@ public class recepcion extends HttpServlet {
 				dispatcher.forward(request, response);
 			}
 		} else {
-			// Mandar para atras a decir que campo falta
+			// Mandar al login a decir que campo está vacío
 			RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/index.jsp");
 
 			request.setAttribute("nombreHaSidoEnviado", nombreHaSidoEnviado);
