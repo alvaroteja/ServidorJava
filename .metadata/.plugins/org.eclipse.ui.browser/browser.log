@@ -75,3 +75,9 @@ feb 02, 2023 11:41:06.75 [13300:11112:0202/114106.074:ERROR:connection_factory_i
 feb 03, 2023 10:34:16.126 NEW SESSION
 feb 03, 2023 10:34:16.126 [11148:6816:0203/103416.125:ERROR:device_event_log_impl.cc(215)] [10:34:16.124] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
 feb 03, 2023 10:35:13.940 [11148:2288:0203/103513.939:ERROR:util.cc(134)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+
+feb 08, 2023 12:54:16.978 NEW SESSION
+feb 08, 2023 12:54:16.978 [7960:14248:0208/125416.977:ERROR:device_event_log_impl.cc(215)] [12:54:16.976] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+feb 08, 2023 12:54:51.115 [7960:14248:0208/125451.114:ERROR:interface_endpoint_client.cc(695)] Message 1 rejected by interface blink.mojom.WidgetHost
+feb 08, 2023 12:55:14.898 [7960:8444:0208/125514.897:ERROR:util.cc(134)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+feb 08, 2023 13:07:34.511 [7960:14248:0208/130734.511:ERROR:device_event_log_impl.cc(215)] [13:07:34.512] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: No se ha encontrado el elemento. (0x490)

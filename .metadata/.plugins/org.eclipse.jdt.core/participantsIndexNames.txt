@@ -9,10 +9,12 @@ C:\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\12048
 \13-Sesiones\src\main\java
 C:\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2437412458.index
 \contadorVisitas\src\main\java
-C:\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4193816202.index
-\13-sesiones\src\main\java
 C:\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1492161170.index
 \10-Redireccion\src\main\java
+C:\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4193816202.index
+\13-sesiones\src\main\java
+C:\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\496538185.index
+\17-TiendaLibros\src\main\java
 C:\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4172203959.index
 \06_Practica8-3ConJSP\src\main\java
 C:\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\500133367.index
