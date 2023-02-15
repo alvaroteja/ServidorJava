@@ -6590,3 +6590,1177 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-08 14:14:05.713
 !MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+!SESSION 2023-02-09 12:31:57.001 -----------------------------------------------
+eclipse.buildId=4.26.0.20221201-1200
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY ch.qos.logback.classic 1 0 2023-02-09 12:31:58.057
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2023-02-09 12:32:14.610
+!MESSAGE Logback config file: C:\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.1.0.20221015-0744.xml
+
+!ENTRY org.eclipse.ui 2 0 2023-02-09 12:32:15.552
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2023-02-09 12:32:15.552
+!MESSAGE Cannot bind to an undefined command: plug-in='com.genuitec.eclipse.theming.ui', id='com.genuitec.myeclipse.help.darktheme.commandid'
+
+!ENTRY com.genuitec.eclipse.theming.ui 1 0 2023-02-09 12:32:16.035
+!MESSAGE A DevStyle Theme is being activated on this workspace; preparing colors and configuration
+
+!ENTRY com.genuitec.eclipse.theming.ui 1 0 2023-02-09 12:32:16.051
+!MESSAGE DevStyle has archived current color configurations to alternate preferences - will be restored when switching out of the DevStyle Theme
+
+!ENTRY org.eclipse.jface 2 0 2023-02-09 12:32:16.598
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-02-09 12:32:16.598
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-02-09 12:32:16.598
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.edit.text.java.rename.element"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.ui.edit.rename"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-02-09 12:32:20.790
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\alu2daw'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-09 12:32:51.962
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-09 12:32:51.966
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-09 12:32:52.398
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-09 12:32:52.400
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-09 12:41:27.628
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-09 12:41:27.631
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-09 12:42:27.652
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-09 12:42:27.655
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-09 12:42:37.064
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-09 12:42:37.067
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.jdt.core 4 4 2023-02-09 12:43:03.042
+!MESSAGE JavaBuilder handling CoreException
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/17-TiendaLibros/target/classes/FiltroContador.class)[275]: java.lang.Exception: A resource exists with a different case: '/17-TiendaLibros/target/classes/FiltroContador.class'.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:318)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:296)
+	at org.eclipse.core.internal.resources.File.create(File.java:109)
+	at org.eclipse.jdt.internal.core.builder.AbstractImageBuilder.writeClassFileContents(AbstractImageBuilder.java:891)
+	at org.eclipse.jdt.internal.core.builder.AbstractImageBuilder.writeClassFile(AbstractImageBuilder.java:870)
+	at org.eclipse.jdt.internal.core.builder.AbstractImageBuilder.acceptResult(AbstractImageBuilder.java:194)
+	at org.eclipse.jdt.internal.compiler.Compiler.processCompiledUnits(Compiler.java:615)
+	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:475)
+	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:426)
+	at org.eclipse.jdt.internal.core.builder.AbstractImageBuilder.compile(AbstractImageBuilder.java:379)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.compile(BatchImageBuilder.java:214)
+	at org.eclipse.jdt.internal.core.builder.AbstractImageBuilder.compile(AbstractImageBuilder.java:311)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:79)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:273)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildDeltas(JavaBuilder.java:295)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:213)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1020)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:247)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:392)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:395)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:506)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:454)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:536)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:161)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:255)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.core.resources 4 275 2023-02-09 12:43:03.042
+!MESSAGE A resource exists with a different case: '/17-TiendaLibros/target/classes/FiltroContador.class'.
+!STACK 0
+java.lang.Exception: A resource exists with a different case: '/17-TiendaLibros/target/classes/FiltroContador.class'.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:318)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:296)
+	at org.eclipse.core.internal.resources.File.create(File.java:109)
+	at org.eclipse.jdt.internal.core.builder.AbstractImageBuilder.writeClassFileContents(AbstractImageBuilder.java:891)
+	at org.eclipse.jdt.internal.core.builder.AbstractImageBuilder.writeClassFile(AbstractImageBuilder.java:870)
+	at org.eclipse.jdt.internal.core.builder.AbstractImageBuilder.acceptResult(AbstractImageBuilder.java:194)
+	at org.eclipse.jdt.internal.compiler.Compiler.processCompiledUnits(Compiler.java:615)
+	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:475)
+	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:426)
+	at org.eclipse.jdt.internal.core.builder.AbstractImageBuilder.compile(AbstractImageBuilder.java:379)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.compile(BatchImageBuilder.java:214)
+	at org.eclipse.jdt.internal.core.builder.AbstractImageBuilder.compile(AbstractImageBuilder.java:311)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:79)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:273)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildDeltas(JavaBuilder.java:295)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:213)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1020)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:247)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:392)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:395)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:506)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:454)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:536)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:161)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:255)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-09 12:43:03.055
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-09 12:43:03.061
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-09 12:43:08.074
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-09 12:43:08.076
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-09 12:43:32.213
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-09 12:43:32.217
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-09 12:44:24.631
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-09 12:44:24.633
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-09 12:44:54.211
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-09 12:44:54.227
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-09 12:45:07.926
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-09 12:45:07.929
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-09 12:52:00.120
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-09 12:52:00.124
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-09 12:58:37.378
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-09 12:58:37.380
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-09 12:58:47.955
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-09 12:58:47.958
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-09 12:59:30.432
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-09 12:59:30.435
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-09 13:04:13.865
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-09 13:04:13.868
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-09 13:04:50.581
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-09 13:04:50.584
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-09 13:06:46.275
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-09 13:06:46.277
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-09 13:07:07.934
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-09 13:07:07.936
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-09 13:08:07.764
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-09 13:08:07.767
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-09 13:08:44.343
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-09 13:08:44.345
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-09 13:09:25.394
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-09 13:09:25.396
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-09 13:09:32.890
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-09 13:09:32.892
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-09 13:10:46.461
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-09 13:10:46.464
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-09 13:11:40.194
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-09 13:11:40.195
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-09 13:15:17.554
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-09 13:15:17.556
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-09 13:15:22.096
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-09 13:15:22.098
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-09 13:15:45.603
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-09 13:15:45.605
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-09 13:19:29.574
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-09 13:19:29.576
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-09 13:20:12.625
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-09 13:20:12.628
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-09 13:20:22.711
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-09 13:20:22.713
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-09 13:20:38.233
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-09 13:20:38.235
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-09 13:21:29.526
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-09 13:21:29.528
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-09 13:21:46.675
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-09 13:21:46.677
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+!SESSION 2023-02-10 10:37:34.600 -----------------------------------------------
+eclipse.buildId=4.26.0.20221201-1200
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY ch.qos.logback.classic 1 0 2023-02-10 10:37:35.720
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2023-02-10 10:37:43.785
+!MESSAGE Logback config file: C:\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.1.0.20221015-0744.xml
+
+!ENTRY org.eclipse.jface 2 0 2023-02-10 10:37:45.963
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-02-10 10:37:45.963
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-02-10 10:37:45.963
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.edit.text.java.rename.element"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.ui.edit.rename"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.ui.ide 4 4 2023-02-10 10:37:45.979
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:172)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:120)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:713)
+	at com.genuitec.eclipse.webicons.IconImageDescriptor.createImage(IconImageDescriptor.java:46)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:290)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:268)
+	at com.genuitec.eclipse.startup.dialogs.custom.UIHelper.createIcon(UIHelper.java:342)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameControl.createBrowseOnHover(WorkspaceNameControl.java:279)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameLink.createNameLabel(WorkspaceNameLink.java:105)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameControl.<init>(WorkspaceNameControl.java:183)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameLink.<init>(WorkspaceNameLink.java:80)
+	at com.genuitec.eclipse.startup.dialogs.tabs.LaunchTabMainPage.createRecentWorkspacesComposite(LaunchTabMainPage.java:92)
+	at com.genuitec.eclipse.startup.dialogs.tabs.LaunchTabMainPage.createContents(LaunchTabMainPage.java:55)
+	at com.genuitec.eclipse.startup.dialogs.tabs.LaunchTabFactory.createPages(LaunchTabFactory.java:40)
+	at com.genuitec.eclipse.startup.dialogs.tabs.LaunchTabFactory.createTabArea(LaunchTabFactory.java:34)
+	at com.genuitec.eclipse.startup.dialogs.tabs.CodeFullyTabFactory.createContents(CodeFullyTabFactory.java:139)
+	at com.genuitec.eclipse.startup.dialogs.custom.SideTabFolder.createTabContent(SideTabFolder.java:455)
+	at com.genuitec.eclipse.startup.dialogs.custom.SideTabFolder.doCreateTabs(SideTabFolder.java:224)
+	at com.genuitec.eclipse.startup.dialogs.custom.SideTabFolder.createTabs(SideTabFolder.java:155)
+	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.createTabs(AbstactSideTabDialog.java:142)
+	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.createTabs(CustomStartupDialog.java:465)
+	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.createTabs(CustomStartupDialog.java:461)
+	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.createContents(AbstactSideTabDialog.java:122)
+	at org.eclipse.jface.window.Window.create(Window.java:431)
+	at org.eclipse.jface.window.Window.open(Window.java:788)
+	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.open(AbstactSideTabDialog.java:61)
+	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.prompt(CustomStartupDialog.java:336)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.showCustomDialog(IDEApplication.java:627)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.promptForWorkspace(IDEApplication.java:383)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.checkInstanceLocation(IDEApplication.java:285)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:142)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-02-10 10:37:50.351
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\alu2daw'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-10 10:37:53.380
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-10 10:37:53.385
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-10 10:37:53.947
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-10 10:37:53.950
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+!SESSION 2023-02-10 14:06:30.967 -----------------------------------------------
+eclipse.buildId=4.26.0.20221201-1200
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY ch.qos.logback.classic 1 0 2023-02-10 14:06:31.997
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2023-02-10 14:06:40.951
+!MESSAGE Logback config file: C:\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.1.0.20221015-0744.xml
+
+!ENTRY org.eclipse.jface 2 0 2023-02-10 14:06:42.923
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-02-10 14:06:42.923
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-02-10 14:06:42.923
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.edit.text.java.rename.element"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.ui.edit.rename"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.ui.ide 4 4 2023-02-10 14:06:42.939
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:172)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:120)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:713)
+	at com.genuitec.eclipse.webicons.IconImageDescriptor.createImage(IconImageDescriptor.java:46)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:290)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:268)
+	at com.genuitec.eclipse.startup.dialogs.custom.UIHelper.createIcon(UIHelper.java:342)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameControl.createBrowseOnHover(WorkspaceNameControl.java:279)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameLink.createNameLabel(WorkspaceNameLink.java:105)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameControl.<init>(WorkspaceNameControl.java:183)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameLink.<init>(WorkspaceNameLink.java:80)
+	at com.genuitec.eclipse.startup.dialogs.tabs.LaunchTabMainPage.createRecentWorkspacesComposite(LaunchTabMainPage.java:92)
+	at com.genuitec.eclipse.startup.dialogs.tabs.LaunchTabMainPage.createContents(LaunchTabMainPage.java:55)
+	at com.genuitec.eclipse.startup.dialogs.tabs.LaunchTabFactory.createPages(LaunchTabFactory.java:40)
+	at com.genuitec.eclipse.startup.dialogs.tabs.LaunchTabFactory.createTabArea(LaunchTabFactory.java:34)
+	at com.genuitec.eclipse.startup.dialogs.tabs.CodeFullyTabFactory.createContents(CodeFullyTabFactory.java:139)
+	at com.genuitec.eclipse.startup.dialogs.custom.SideTabFolder.createTabContent(SideTabFolder.java:455)
+	at com.genuitec.eclipse.startup.dialogs.custom.SideTabFolder.doCreateTabs(SideTabFolder.java:224)
+	at com.genuitec.eclipse.startup.dialogs.custom.SideTabFolder.createTabs(SideTabFolder.java:155)
+	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.createTabs(AbstactSideTabDialog.java:142)
+	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.createTabs(CustomStartupDialog.java:465)
+	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.createTabs(CustomStartupDialog.java:461)
+	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.createContents(AbstactSideTabDialog.java:122)
+	at org.eclipse.jface.window.Window.create(Window.java:431)
+	at org.eclipse.jface.window.Window.open(Window.java:788)
+	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.open(AbstactSideTabDialog.java:61)
+	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.prompt(CustomStartupDialog.java:336)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.showCustomDialog(IDEApplication.java:627)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.promptForWorkspace(IDEApplication.java:383)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.checkInstanceLocation(IDEApplication.java:285)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:142)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-02-10 14:06:46.961
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\alu2daw'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.core.jobs 4 2 2023-02-10 14:06:52.218
+!MESSAGE An internal error occurred during: "Deferred Early Start".
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.equinox.log.Logger.log(Object, int, String, java.lang.Throwable)" because "this.logger" is null
+	at org.eclipse.core.internal.runtime.Log.log(Log.java:68)
+	at org.eclipse.oomph.util.OomphPlugin.log(OomphPlugin.java:241)
+	at org.eclipse.oomph.util.OomphPlugin.log(OomphPlugin.java:252)
+	at org.eclipse.oomph.internal.ui.EarlyStart.run(EarlyStart.java:123)
+	at org.eclipse.oomph.internal.ui.EarlyStart$1.run(EarlyStart.java:98)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2023-02-13 08:39:30.349 -----------------------------------------------
+eclipse.buildId=4.26.0.20221201-1200
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY ch.qos.logback.classic 1 0 2023-02-13 08:39:31.549
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2023-02-13 08:42:29.026
+!MESSAGE Logback config file: C:\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.1.0.20221015-0744.xml
+
+!ENTRY org.eclipse.ui.ide 4 4 2023-02-13 08:42:31.396
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:172)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:120)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:713)
+	at com.genuitec.eclipse.webicons.IconImageDescriptor.createImage(IconImageDescriptor.java:46)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:290)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:268)
+	at com.genuitec.eclipse.startup.dialogs.custom.UIHelper.createIcon(UIHelper.java:342)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameControl.createBrowseOnHover(WorkspaceNameControl.java:279)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameLink.createNameLabel(WorkspaceNameLink.java:105)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameControl.<init>(WorkspaceNameControl.java:183)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameLink.<init>(WorkspaceNameLink.java:80)
+	at com.genuitec.eclipse.startup.dialogs.tabs.LaunchTabMainPage.createRecentWorkspacesComposite(LaunchTabMainPage.java:92)
+	at com.genuitec.eclipse.startup.dialogs.tabs.LaunchTabMainPage.createContents(LaunchTabMainPage.java:55)
+	at com.genuitec.eclipse.startup.dialogs.tabs.LaunchTabFactory.createPages(LaunchTabFactory.java:40)
+	at com.genuitec.eclipse.startup.dialogs.tabs.LaunchTabFactory.createTabArea(LaunchTabFactory.java:34)
+	at com.genuitec.eclipse.startup.dialogs.tabs.CodeFullyTabFactory.createContents(CodeFullyTabFactory.java:139)
+	at com.genuitec.eclipse.startup.dialogs.custom.SideTabFolder.createTabContent(SideTabFolder.java:455)
+	at com.genuitec.eclipse.startup.dialogs.custom.SideTabFolder.doCreateTabs(SideTabFolder.java:224)
+	at com.genuitec.eclipse.startup.dialogs.custom.SideTabFolder.createTabs(SideTabFolder.java:155)
+	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.createTabs(AbstactSideTabDialog.java:142)
+	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.createTabs(CustomStartupDialog.java:465)
+	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.createTabs(CustomStartupDialog.java:461)
+	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.createContents(AbstactSideTabDialog.java:122)
+	at org.eclipse.jface.window.Window.create(Window.java:431)
+	at org.eclipse.jface.window.Window.open(Window.java:788)
+	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.open(AbstactSideTabDialog.java:61)
+	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.prompt(CustomStartupDialog.java:336)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.showCustomDialog(IDEApplication.java:627)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.promptForWorkspace(IDEApplication.java:383)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.checkInstanceLocation(IDEApplication.java:285)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:142)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.jface 2 0 2023-02-13 08:42:31.444
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-02-13 08:42:31.444
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-02-13 08:42:31.444
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.edit.text.java.rename.element"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.ui.edit.rename"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-02-13 08:42:36.444
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\alu2daw'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2023-02-13 08:52:22.274 -----------------------------------------------
+eclipse.buildId=4.26.0.20221201-1200
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data file:/C:/eclipse-workspace/ -product org.eclipse.epp.package.jee.product
+
+!ENTRY ch.qos.logback.classic 1 0 2023-02-13 08:52:23.310
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2023-02-13 08:52:25.735
+!MESSAGE Logback config file: C:\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.1.0.20221015-0744.xml
+
+!ENTRY org.eclipse.jface 2 0 2023-02-13 08:52:27.806
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-02-13 08:52:27.806
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-02-13 08:52:27.806
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.edit.text.java.rename.element"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.ui.edit.rename"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-02-13 08:52:31.765
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\alu2daw'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-13 09:03:16.695
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-13 09:03:16.703
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-13 09:03:17.988
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-13 09:03:17.991
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+!SESSION 2023-02-14 09:02:36.095 -----------------------------------------------
+eclipse.buildId=4.26.0.20221201-1200
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY ch.qos.logback.classic 1 0 2023-02-14 09:02:37.257
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY org.eclipse.core.resources 2 10035 2023-02-14 09:02:41.754
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY ch.qos.logback.classic 1 0 2023-02-14 09:02:43.562
+!MESSAGE Logback config file: C:\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.1.0.20221015-0744.xml
+
+!ENTRY org.eclipse.jface 2 0 2023-02-14 09:02:45.711
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-02-14 09:02:45.711
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-02-14 09:02:45.711
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.edit.text.java.rename.element"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.ui.edit.rename"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.ui.ide 4 4 2023-02-14 09:02:45.745
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:172)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:120)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:713)
+	at com.genuitec.eclipse.webicons.IconImageDescriptor.createImage(IconImageDescriptor.java:46)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:290)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:268)
+	at com.genuitec.eclipse.startup.dialogs.custom.UIHelper.createIcon(UIHelper.java:342)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameControl.createBrowseOnHover(WorkspaceNameControl.java:279)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameLink.createNameLabel(WorkspaceNameLink.java:105)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameControl.<init>(WorkspaceNameControl.java:183)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameLink.<init>(WorkspaceNameLink.java:80)
+	at com.genuitec.eclipse.startup.dialogs.tabs.LaunchTabMainPage.createRecentWorkspacesComposite(LaunchTabMainPage.java:92)
+	at com.genuitec.eclipse.startup.dialogs.tabs.LaunchTabMainPage.createContents(LaunchTabMainPage.java:55)
+	at com.genuitec.eclipse.startup.dialogs.tabs.LaunchTabFactory.createPages(LaunchTabFactory.java:40)
+	at com.genuitec.eclipse.startup.dialogs.tabs.LaunchTabFactory.createTabArea(LaunchTabFactory.java:34)
+	at com.genuitec.eclipse.startup.dialogs.tabs.CodeFullyTabFactory.createContents(CodeFullyTabFactory.java:139)
+	at com.genuitec.eclipse.startup.dialogs.custom.SideTabFolder.createTabContent(SideTabFolder.java:455)
+	at com.genuitec.eclipse.startup.dialogs.custom.SideTabFolder.doCreateTabs(SideTabFolder.java:224)
+	at com.genuitec.eclipse.startup.dialogs.custom.SideTabFolder.createTabs(SideTabFolder.java:155)
+	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.createTabs(AbstactSideTabDialog.java:142)
+	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.createTabs(CustomStartupDialog.java:465)
+	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.createTabs(CustomStartupDialog.java:461)
+	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.createContents(AbstactSideTabDialog.java:122)
+	at org.eclipse.jface.window.Window.create(Window.java:431)
+	at org.eclipse.jface.window.Window.open(Window.java:788)
+	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.open(AbstactSideTabDialog.java:61)
+	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.prompt(CustomStartupDialog.java:336)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.showCustomDialog(IDEApplication.java:627)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.promptForWorkspace(IDEApplication.java:383)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.checkInstanceLocation(IDEApplication.java:285)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:142)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-02-14 09:02:50.142
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\alu2daw'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-14 09:02:56.348
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-14 09:02:56.353
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-14 09:02:57.922
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-14 09:02:57.936
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.ui.ide 4 4 2023-02-14 09:39:04.623
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:172)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:120)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:668)
+	at org.eclipse.jface.resource.URLImageDescriptor.createImage(URLImageDescriptor.java:241)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:290)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:268)
+	at org.eclipse.jst.jee.ui.internal.navigator.web.WebAppProvider.getWeb50Image(WebAppProvider.java:177)
+	at org.eclipse.jst.jee.ui.internal.navigator.web.WebAppProvider.getImage(WebAppProvider.java:114)
+	at org.eclipse.jst.jee.ui.internal.navigator.Web25LabelProvider.getImage(Web25LabelProvider.java:47)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceLabelProvider.findImage(NavigatorContentServiceLabelProvider.java:204)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceLabelProvider.getColumnImage(NavigatorContentServiceLabelProvider.java:112)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceLabelProvider.getImage(NavigatorContentServiceLabelProvider.java:104)
+	at org.eclipse.ui.internal.navigator.NavigatorDecoratingLabelProvider$StyledLabelProviderAdapter.getImage(NavigatorDecoratingLabelProvider.java:63)
+	at org.eclipse.jface.viewers.DelegatingStyledCellLabelProvider.getImage(DelegatingStyledCellLabelProvider.java:198)
+	at org.eclipse.jface.viewers.DecoratingStyledCellLabelProvider.getImage(DecoratingStyledCellLabelProvider.java:171)
+	at org.eclipse.jface.viewers.DelegatingStyledCellLabelProvider._update(DelegatingStyledCellLabelProvider.java:124)
+	at org.eclipse.jface.viewers.DelegatingStyledCellLabelProvider.update(DelegatingStyledCellLabelProvider.java:112)
+	at org.eclipse.jface.viewers.DecoratingStyledCellLabelProvider.update(DecoratingStyledCellLabelProvider.java:134)
+	at org.eclipse.jface.viewers.ViewerColumn.refresh(ViewerColumn.java:144)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.doUpdateItem(AbstractTreeViewer.java:970)
+	at org.eclipse.jface.viewers.AbstractTreeViewer$UpdateItemSafeRunnable.run(AbstractTreeViewer.java:126)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:174)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.doUpdateItem(AbstractTreeViewer.java:1048)
+	at org.eclipse.jface.viewers.StructuredViewer$UpdateItemSafeRunnable.run(StructuredViewer.java:427)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:174)
+	at org.eclipse.jface.viewers.StructuredViewer.updateItem(StructuredViewer.java:2107)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.createTreeItem(AbstractTreeViewer.java:864)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.createAddedElements(AbstractTreeViewer.java:433)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalAdd(AbstractTreeViewer.java:289)
+	at org.eclipse.jface.viewers.TreeViewer.internalAdd(TreeViewer.java:630)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.add(AbstractTreeViewer.java:167)
+	at org.eclipse.ui.navigator.CommonViewer.add(CommonViewer.java:305)
+	at org.eclipse.jst.j2ee.navigator.internal.ClearPlaceHolderJob.runInUIThread(ClearPlaceHolderJob.java:42)
+	at org.eclipse.jst.jee.ui.internal.navigator.ClearJeePlaceHolderJob.runInUIThread(ClearJeePlaceHolderJob.java:32)
+	at org.eclipse.ui.progress.UIJob.lambda$0(UIJob.java:148)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4029)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3645)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-14 09:39:07.427
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-14 09:39:07.430
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-14 09:39:07.442
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-14 09:41:06.340
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-14 09:41:06.342
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-14 09:41:06.346
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-14 09:41:07.536
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-14 09:41:07.538
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-14 09:41:08.692
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-14 09:41:08.694
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2023-02-14 09:42:01.927
+!MESSAGE Could not schedule source download
+!STACK 1
+Java Model Exception: Error in Java Model (code 1006): build/classes/practica [in 18-LibreriaMVC] is not on its project's build path
+	at org.eclipse.jdt.internal.core.JavaElement.newJavaModelException(JavaElement.java:584)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:254)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:597)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:328)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:314)
+	at org.eclipse.jdt.internal.core.PackageFragmentRoot.getKind(PackageFragmentRoot.java:530)
+	at org.eclipse.jdt.internal.core.PackageFragmentRoot.getSourceAttachmentPath(PackageFragmentRoot.java:655)
+	at org.eclipse.m2e.jdt.ui.internal.DownloadSourcesActionDelegate.setActiveEditor(DownloadSourcesActionDelegate.java:50)
+	at org.eclipse.ui.internal.EditorPluginAction.editorChanged(EditorPluginAction.java:69)
+	at org.eclipse.ui.internal.EditorActionBuilder$EditorContribution.editorChanged(EditorActionBuilder.java:77)
+	at org.eclipse.ui.internal.EditorActionBuilder$ExternalContributor.setActiveEditor(EditorActionBuilder.java:123)
+	at org.eclipse.ui.internal.EditorActionBars.partChanged(EditorActionBars.java:338)
+	at org.eclipse.ui.internal.WorkbenchPage.updateActivations(WorkbenchPage.java:323)
+	at org.eclipse.ui.internal.WorkbenchPage$E4PartListener.partActivated(WorkbenchPage.java:212)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl$2.run(PartServiceImpl.java:250)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.firePartActivated(PartServiceImpl.java:247)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.activate(PartServiceImpl.java:774)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.activate(PartServiceImpl.java:683)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.activate(PartServiceImpl.java:678)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(WorkbenchPage.java:3218)
+	at org.eclipse.ui.internal.WorkbenchPage.lambda$9(WorkbenchPage.java:3100)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:74)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3098)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3068)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3059)
+	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInEditor(EditorUtility.java:380)
+	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInEditor(EditorUtility.java:184)
+	at org.eclipse.jdt.ui.actions.OpenAction.run(OpenAction.java:288)
+	at org.eclipse.jdt.ui.actions.OpenAction.run(OpenAction.java:254)
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.dispatchRun(SelectionDispatchAction.java:274)
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.run(SelectionDispatchAction.java:252)
+	at org.eclipse.jdt.internal.ui.navigator.OpenAndExpand.run(OpenAndExpand.java:53)
+	at org.eclipse.ui.actions.RetargetAction.run(RetargetAction.java:215)
+	at org.eclipse.ui.navigator.CommonNavigatorManager$1.open(CommonNavigatorManager.java:183)
+	at org.eclipse.ui.OpenAndLinkWithEditorHelper$InternalListener.open(OpenAndLinkWithEditorHelper.java:48)
+	at org.eclipse.jface.viewers.StructuredViewer$2.run(StructuredViewer.java:800)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:174)
+	at org.eclipse.jface.viewers.StructuredViewer.fireOpen(StructuredViewer.java:797)
+	at org.eclipse.jface.viewers.StructuredViewer.handleOpen(StructuredViewer.java:1116)
+	at org.eclipse.ui.navigator.CommonViewer.handleOpen(CommonViewer.java:454)
+	at org.eclipse.jface.util.OpenStrategy.fireOpenEvent(OpenStrategy.java:296)
+	at org.eclipse.jface.util.OpenStrategy$1.handleEvent(OpenStrategy.java:331)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4256)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4054)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3642)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1006 2023-02-14 09:42:01.928
+!MESSAGE build/classes/practica [in 18-LibreriaMVC] is not on its project's build path
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-14 09:43:41.037
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-14 09:43:41.039
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-14 09:44:56.557
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-14 09:44:56.559
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-14 09:46:15.520
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-14 09:46:15.525
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-14 09:47:59.187
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-14 09:47:59.189
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-14 09:48:38.704
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-14 09:48:38.707
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-14 09:52:46.604
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-14 09:52:46.606
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-14 09:55:57.757
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-14 09:55:57.760
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-14 09:58:11.957
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-14 09:58:11.959
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-14 09:58:37.975
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-14 09:58:37.977
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-14 10:01:32.133
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-14 10:01:32.137
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-14 10:02:19.238
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-14 10:02:19.241
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-14 10:02:43.699
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-14 10:02:43.701
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-14 10:08:51.151
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-14 10:08:51.155
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-14 10:09:48.598
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-14 10:09:48.600
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-14 10:12:30.325
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-14 10:12:30.327
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-14 10:19:54.722
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-14 10:19:54.723
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-14 10:20:03.095
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-02-14 10:20:03.098
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!

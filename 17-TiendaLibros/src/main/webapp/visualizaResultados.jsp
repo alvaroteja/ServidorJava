@@ -1,6 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1" import="java.sql.ResultSet"%>
 <%
 ResultSet rset = (ResultSet) request.getAttribute("rset");
+
+ServletContext context = config.getServletContext();
 %>
 
 <!DOCTYPE html>
@@ -18,7 +20,12 @@ ResultSet rset = (ResultSet) request.getAttribute("rset");
 		count++;
 	}
 	out.println("<p>==== " + count + " registros encontrados =====</p>");
+	
+	Integer contador = (Integer)context.getAttribute("contador");
+	out.println("<p>==== " + contador.intValue() + " peticiones *.jsp===</p>");
+	out.println("<a href='http://localhost:8080/17-TiendaLibros/ConsultaLibros.jsp'>Link</a>");
 	out.println("</body></html>");
+	
 	%>
 </body>
 </html>

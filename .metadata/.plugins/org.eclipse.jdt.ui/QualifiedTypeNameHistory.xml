@@ -31,4 +31,12 @@
     <fullyQualifiedTypeName name="java.sql.ResultSet"/>
     <fullyQualifiedTypeName name="java.sql.SQLException"/>
     <fullyQualifiedTypeName name="jakarta.servlet.RequestDispatcher"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.ServletConfig"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.FilterConfig"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.Filter"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.ServletRequest"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.ServletResponse"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.FilterChain"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.ServletException"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.ServletContext"/>
 </qualifiedTypeNameHistroy>

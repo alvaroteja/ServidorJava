@@ -1,3 +1,5 @@
+import java.io.IOException;
+import jakarta.servlet.*;
 
 import jakarta.servlet.Filter;
 import jakarta.servlet.FilterChain;
@@ -6,28 +8,11 @@ import jakarta.servlet.ServletContext;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.ServletRequest;
 import jakarta.servlet.ServletResponse;
-import jakarta.servlet.annotation.WebFilter;
-import jakarta.servlet.http.HttpFilter;
-import java.io.IOException;
 
-/**
- * Servlet Filter implementation class filtroContrador
- */
-public class filtroContrador extends HttpFilter implements Filter {
-	// Para tener una referencia al contexto de filtro
+public class FiltroContador implements Filter {
+// Para tener una referencia al contexto de filtro
 	FilterConfig config;
 
-	/**
-	 * @see HttpFilter#HttpFilter()
-	 */
-	public filtroContrador() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
-
-	/**
-	 * @see Filter#init(FilterConfig)
-	 */
 	public void init(FilterConfig config) {
 		this.config = config;
 	}
@@ -47,7 +32,7 @@ public class filtroContrador extends HttpFilter implements Filter {
 		// Instruimos al contenedor para que invoque al siguiente filtro
 		chain.doFilter(request, response);
 	}
-	public void destroy() {}
 
-
+	public void destroy() {
+	}
 }

@@ -1,6 +1,7 @@
 
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletConfig;
+import jakarta.servlet.ServletContext;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -22,6 +23,9 @@ public class ConsultaServlet extends HttpServlet {
 	private String userName;
 	private String password;
 	private String url;
+	private Integer contador;
+	private ServletContext context;
+
 
 	/**
 	 * @see HttpServlet#HttpServlet()
@@ -92,6 +96,8 @@ public class ConsultaServlet extends HttpServlet {
 //			}
 //			out.println("<p>==== " + count + " registros encontrados =====</p>");
 //			out.println("</body></html>");
+			
+
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		} finally {
@@ -115,6 +121,8 @@ public class ConsultaServlet extends HttpServlet {
 		userName = config.getInitParameter("usuario");
 		password = config.getInitParameter("password");
 		url = config.getInitParameter("URLBaseDeDatos");
+		
+		context = config.getServletContext();
 	}
 
 }
